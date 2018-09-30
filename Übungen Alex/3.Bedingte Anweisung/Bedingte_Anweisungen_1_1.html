@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		
+		
+		(function (){
+			
+			// math.random erzeugt einen zufälligen Wert von [0,1[  --> wenn Wert >= 0.5 --> Variable ist auf true gesetzt, sonst false! 
+ 			let randomBoolean = Math.random() >= 0.5;
+					
+			// if (randomBoolean = true) --> auf =true kann kann verzichtet werden, das erkennt JavaScript von selber wenn es randomBoolean gibt! 
+			if (randomBoolean) {
+				alert('Stimmt! Heute ist das Glas wohl mindestens halb voll!');
+			} else {
+				alert('Stimmt nicht! ...Warum sind Computer nur immer so negativ?');
+			}
+			
+			
+			/*
+			 
+			Alternative 2 
+			
+			// anlegen der Variable randomBoolean, alternativ auch --> let randomBoolean = '';
+			let randomBoolean 
+			
+			if (randomBoolean = Math.random() >= 0.5) {
+				alert('Stimmt');
+			} else {
+				alert('Stimmt nicht');
+			} 
+			
+			*/
+			
+		})();
+	
+	
+	</script>
+</head>
+<body>
+	<p>Wie 1, aber: Lass die boolsche Variable zufällig mit true oder false belegen. 
+	</p>
+
+</body>
+</html>

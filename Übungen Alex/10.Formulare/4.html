@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<style type="text/css">
+	#klick {
+		position:relative;
+		display:block;
+		background-color:#ccc;
+		border:#aaa 1px solid;
+		border-radius:3px;
+		width:200px;
+		padding:5px;
+		text-align:center;
+		text-transform: uppercase;
+		color:#000;
+		font-weight:bold;
+	}
+	#klick:hover {
+		color:#f00;
+	}
+	.hallo {
+		position:relative;
+		background-color: #eee;
+		margin-bottom: 10px;
+		padding:10px;
+		
+		border:1px solid #ccc;
+		border-radius:5px;
+		moz-border-radius: 5px;
+	}
+	.hallo p {
+		position:relative;
+		margin-left:20px;
+	}
+	.rot {
+		color:#f00;
+	}
+	.hervorheben {
+		font-weight:bold;
+		border-width:5px;
+	}
+	textarea {
+		width:500px;
+		height:200px;
+	}
+</style>
+
+<script type="text/javascript">
+	
+	'use strict'
+	
+	let naechsterIndex = 0;	// information welches Zeichen ich als nächstes kopiere
+	const uebertrag = (eingabe, ausgabe) => {
+	
+		if ( eingabe.value.substr.(naechsterIndex, 2) == '\n' ) { 			// hier werden Zeilenumbrüche im Eingabefeld abgefangen und mitgenommen 
+			ausgabe.innerHTML += '<br>';									// funktioniert aber hier nicht richtig weil er '\n' nciht als string erkennt... noch verbessern!!!! Suchen warum
+			naechsterIndex += 2;
+		}
+		if ( eingabe.value[ naechsterIndex ] ){
+		ausgabe.innerHTML += eingabe.value[ naechsterIndex ];
+		naechsterIndex ++;
+		};
+	}
+	
+	window.onload = () => {
+		
+		let eingabe = document.querySelector ( '#eingabe1' );
+		let ausgabe = document.querySelector ( '#ausgabe' );
+		
+									
+		
+		setInterval ( uebertrag, 500, eingabe, ausgabe );
+		
+		
+		
+	}
+	
+</script>
+
+</head>
+<body>
+
+
+<label for="eingabe1">
+	Eingabe 1:
+	<textarea id="eingabe1" class="eing" name="eingabe1">Voreingestellter Text.</textarea>
+</label>
+<br>
+<hr>
+<br>
+<div id="ausgabe"></div>
+
+<button id="klick" href="#">
+	Klick
+</button>
+
+</body>
+</html>
+
+
+
+

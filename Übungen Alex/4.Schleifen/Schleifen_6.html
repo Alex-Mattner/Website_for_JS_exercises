@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		
+	'use strict';
+		
+	let meinText = prompt ( 'Text eingeben' );
+	
+	// Alternative 1 um meinTExt umzudrehen
+	// schleife die uns ein Zeichen nach dem andreen her neimmt und in eine neue varible speichert
+	let umgedreht = '';
+	for ( let i = meinText.length - 1; i >= 0; i--) {              // Schleife läuft rückwärts von hinten nach vorne
+																// mein.Text.length -1 --> weil indxes bei 0 anfangen ohne -1 wäre um 1 zu lang
+		umgedreht += meinText[i];
+	}
+		
+	alert ( umgedreht ); 
+		
+	// alternative 2 --> schleife vorwärts
+	
+	// alternative 3 
+	// string meinText in einer einzigen Zeile code umdrehen
+	let umgedreht = meinText.split('').reverse().join('');
+	
+	alert ( umgedreht );
+		
+	//alternative 4
+	let umgedreht = Array.from(meinText).reverse().join('');
+	alert ( umgedreht );
+		
+	//alternative 5
+	let umgedreht = Array.from ( meinText ).map ( (el, index) => { 
+		return meinText[meinText.length - index - 1] 
+	}).join('');
+	
+	alert ( umgedreht )
+	</script>
+	
+</head>
+<body>
+<p>
+</p>
+
+	<script>
+		
+	</script>
+
+</body>
+</html>

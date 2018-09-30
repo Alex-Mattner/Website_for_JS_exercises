@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<style type="text/css">
+	#klick {
+		position:relative;
+		display:block;
+		background-color:#ccc;
+		border:#aaa 1px solid;
+		border-radius:3px;
+		width:200px;
+		padding:5px;
+		text-align:center;
+		text-transform: uppercase;
+		color:#000;
+		font-weight:bold;
+	}
+	#klick:hover {
+		color:#f00;
+	}
+	.hallo {
+		position:relative;
+		background-color: #eee;
+		margin-bottom: 10px;
+		padding:10px;
+		
+		border:1px solid #ccc;
+		border-radius:5px;
+		moz-border-radius: 5px;
+	}
+	.hallo p {
+		position:relative;
+		margin-left:20px;
+	}
+	.rot {
+		color:#f00;
+	}
+	.hervorheben {
+		font-weight:bold;
+		border-width:5px;
+	}
+</style>
+
+<script>
+	
+	window.onload = () => {
+	
+		
+	/*
+		let divs = Array.from ( document.querySelectorAll ( 'div' ) );    
+		divs.forEach ( el => {
+			el.onclick = evt => {
+				let neu = document.createElement ( 'ausgabe' );
+				neu.classList.add ( 'hallo' );
+				neu.innerHTML = evt.currentTarget.innerHTML;  				//target = man erhält das element das angecklickt wird, currentTarget man erhält das Eleemnt and dem der Eventlistenre hängt
+				document.body.appendChild (neu);
+			}			
+		});
+	*/
+
+	/*
+	//Alternative 2   Elemente sollen beim clicken kopiert werden:
+	let divs = Array.from ( document.querySelectorAll ( 'div' ) );    
+		divs.forEach ( el => {
+			el.onclick = evt => {
+				let neu = evt.currentTarget.cloneNode ( true ); 			// cloneNOde legt kopie des elements an dem der Eventlistener hängt an
+				document.body.appendChild ( neu );															// Achtung : cloneNOde kopiert element aber nimmt eventlistener nicht mit
+		}
+	}
+	*/
+	
+	// Elemente sollen beim clicken kopiert werden: 
+	const kopiereMich = evt => {
+		 let neu = evt.currentTarget.cloneNode ( true );
+		 neu.onclick = kopiereMich;
+		 document.body.appendChild ( neu );
+		 
+		}
+	
+	let divs = Array.from ( document.querySelectorAll ( 'div' ) );    
+		divs.forEach ( el => {
+			el.onclick = kopiereMich
+		});
+		
+		
+		}
+	
+	
+	
+	
+</script>
+
+</head>
+<body>
+
+<div class="hallo">
+	Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+	<p> Hier nicht</p>
+	<p class="rot"> Hier auch nicht</p>
+	<p> Hier erst recht nicht</p>
+</div>
+
+<div class="hallo" id="meins">
+	Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.
+	<p class="rot">Wiesel schmecken abscheulich.</p>
+	<p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel?</p>
+	<p>Wiesel schmecken abscheulich.</p>
+	<p class="rot">Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen.</p>
+</div>
+
+<div class="hallo rot">
+	Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.
+	<p> dieser Tag interessiert uns nicht</p>
+</div>
+
+<a id="klick" href="#">
+	Klick
+</a>
+
+</body>
+</html>

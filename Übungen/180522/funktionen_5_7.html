@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	
+	<script>
+		
+		'use strict';
+		
+		const gibAus = meinText => {
+			let ausg = document.querySelector ( '#ausgabe' );
+			ausg.innerHTML = meinText;
+		}
+		
+		window.onload = () => {
+			
+			let eing = document.querySelector ( '#eingabe' );
+			
+			eing.onchange = evt => {
+				
+				let wert = evt.currentTarget.value;
+				evt.currentTarget.value = '';
+				
+				for ( let i = 2, ende = Math.sqrt(wert); i <= ende; i++ ){
+					if ( wert % i == 0 ){
+						gibAus ( wert + ' ist keine Primzahl.<br>' + i + ' ist der erste Teiler' );
+						return false;
+					}
+				}
+				
+				gibAus ( wert + ' ist eine Primzahl.' );
+				
+			}
+			
+		}
+		
+	</script>
+</head>
+
+<body>
+
+	<input type="text" id="eingabe">
+	<div id="ausgabe"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		
+		
+		(function (){
+			// Math.random() * {[(max - min) + 1 ] + min }
+			let zuf = Math.floor(Math.random() * 101);
+			let andereVar
+			
+			if (zuf <= 20) {
+				andereVar = zuf * 2;
+			} else if (zuf < 50 && zuf >= 20) {
+				andereVar = zuf = 0;
+			} else {
+				andereVar = zuf / 2;
+			}
+			
+			
+			console.log(zuf);
+			console.log(andereVar);
+						
+		})();
+	
+	
+	</script>
+</head>
+<body>
+	<p>
+	Belege eine Variable mit einer zufälligen ganzen Zahl zwischen 0 und 100.
+	Wenn die Variable kleiner ist als 20, soll sie verdoppelt werden.
+	Wenn die Variable kleiner ist als 50 und größergleich 20, soll sie mit 0 belegt werden.
+	Wenn die Variable größergleich 50 ist, soll sie mit halbiert werden.
+	</p>
+
+</body>
+</html>

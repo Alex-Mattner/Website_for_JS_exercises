@@ -1,0 +1,3273 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8" />
+    <title> Übungsaufgaben </title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>
+    
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+	<h1>
+		Übungsaufgaben
+	</h1>
+    <div class="thema">
+      <h2>
+        Miniprojekte
+      </h2>
+      (Ist unabhängig vom aktuellen Wissensstand)
+
+      <div class="aufgaben">
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Erzeuge ein Programm, das den Text aus einem Textarea in einen anderen Textarea kopiert. Dabei sollen in dem Ursprungstext alle sinnvollen Sonderzeichen durch den entsprechenden HTML-Quellcode ersetzt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Erzeuge einen Div-Container, der sich anfassen und verschieben lässt (Drag&Drop).<br> Benutze dafür keine Bibliothek.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Schreibe ein Programm, das alle DIV-Container auf einer Seite alphabetisch sortiert.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            <img src="bilder/miniprojekt4.jpeg" style="position:relative; float: left; margin-right:20px; width:200px; height:auto;"> Schreibe ein Programm, das einen Kasten zeichnet. <br> In diesem soll sich ein Kasten befinden, der um wenige Grad gedreht ist. Die Ecken dieses inneren Kastens sollen auf den Kanten des äußeren Kastens liegen.<br> Lass dieses 20mal wiederholen.
+
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            5
+          </div>
+          <div class="text">
+            <img src="bilder/miniprojekt5.jpeg" style="position:relative; float: left; margin-right:20px; width:200px; height:auto;"> Schreibe ein Programm, das mehrere Kreise zeichnet. <br> Jeder Kreis soll aus einem Haufen weiterer Kreise bestehen.<br> Welche Technik dabei angewendet wird, ist irrelevant.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            6
+          </div>
+          <div class="text">
+            Gestalte eine Webseite mit einem Kontaktformular.<br> Dieses Kontaktformular soll auf Gültigkeit verifiziert werden.<br> Der 'Absenden'-Knopf darf erst funktionieren, wenn alle Bedingungen erfüllt sind.<br> Die folgenden Daten sollen geprüft werden:
+            <ul>
+              <li>
+                Alle Eingabefelder, die mit der Klasse 'mandatory' belegt sind, müssen Inhalt haben.
+              </li>
+              <li>
+                Die Postleitzahl muss eine 5-stellige Zahl sein.
+              </li>
+              <li>
+                Die Telefonnummer darf nur aus Zahlen, Leerstellen, Bindestrich und Schrägstrich bestehen. <br> Wenn die Vorwahl mit einer einzigen '0' beginnt, dann soll diese '0' entfernt werden und die internationale Vorwahl für Deutschland (+49) eingefügt werden.
+              </li>
+              <li>
+                Die E-Mail-Adresse muss gültig sein (@, TLD, Punkte).
+              </li>
+              <li>
+                Die Webadresse muss gültig sein (Protokoll, TLD).
+              </li>
+              <li>
+                Der Knopf 'AGB akzeptiert' muss angehakt sein.
+              </li>
+            </ul>
+            Felder, die diesen Vorgaben nicht entsprechen, sollen rot umrandet werden und mit einem Hinweistext versehen werden.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            7
+          </div>
+          <div class="text">
+            Erstelle eine Raster von 16*16 Feldern.<br> Diese sollen zufällig mit den ganzen Zahlen 1, 2 und 3 belegt werden.<br> Wenn eines der Felder angeklickt wird, dann sollen alle Felder mit gleichem Inhalt geleert werden, die direkt an diesem Feld liegen.<br> Dieses Leeren der Felder mit gleichem Inhalt soll <b>rekursiv</b> weiter geführt werden.
+			<ol>
+				<li>Erweitert: Felder, die nicht mehr von darunter liegenden Feldern gehalten werden, sollen herab stürzen.</li>
+			</ol>
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            8
+          </div>
+          <div class="text">
+            Erstelle eine Todo-Liste.
+			<ol>
+				<li>Erweitert: Listeneinträge sollen in eie Datenbank eingetragen werden.</li>
+			</ol>
+			
+          </div>
+        </div>
+		
+		
+      </div>
+    </div>
+    <div class="thema">
+
+      <h2>
+        node.JS
+      </h2>
+
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Lass im Terminal den Text 'Hallo Welt' ausgeben.
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            Erzeuge ein Array mit 100 Speicherstellen und fülle dies mit zufälligen Zahlen.<br> Lass dann das ganze Array im Terminal ausgeben.
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            Erzeuge ein Objekt, das alle relevanten Informationen eines Autos enthält (Marke, Modell, Leistung(kW), Baujahr).<br> Das Objekt soll eine Methode enthalten, die im Terminal das Altes des Fahrzeugs ausgibt.<br /> Das Objekt soll eine Methode enthalten, die im Terminal die Leistung in PS ausgibt.<br /> Das Objekt soll eine Methode enthalten, die im Terminal Marke und Modell ausgibt.<br />
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            Wie 1.2, aber die Ausgaben sollen alle unterschiedlich gefärbt sein.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Erzeuge mithilfe von node.JS (ohne Express) einen Webserver, der auf den Port 8090 hört.<br> Wenn ein Benutzer eine Verbindung mit dem Server aufbaut, soll er die Meldung 'Ich LEBE!' auf dem Browser sehen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            Wie 2, aber zusätzlich soll im Terminal eine Meldung erscheinen, sobald ein Benutzer den Server aufruft.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.2
+          </div>
+          <div class="text">
+            Wie 2.1, aber zusätzlich sollen alle Anmeldungen in einer Textdatei geloggt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.3
+          </div>
+          <div class="text">
+            Wie 2.2, aber der Benutzer soll nun Dateien ausgeliefert bekommen, die er anfordert. <br> Die Dateien sollen im Unterordner ./docRoot liegen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Wie 2.3, aber verwende nun die Erweiterung 'Express' zum Aufbau des Servers.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+			<b>Websocket</b>
+			<br>
+            Erstelle ein Chat-Programm.<br> Jeder Benutzer bekommt alle Nachrichten der anderen Benutzer zu sehen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4.1
+          </div>
+          <div class="text">
+            Wie 4.<br> Zusätzlich soll jeder Benutzer seinen Benutzer seinen Namen angeben können.<br> Dieser Name wird mit übertragen und bei den anderen Benutzern angezeigt.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4.2
+          </div>
+          <div class="text">
+            Wie 4.1<br> Zusätzlich soll jeder Benutzer eine Farbe wählen können.<br> Bei den Nachrichten wird dessen Name mit dieser Farbe hinterlegt.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4.3
+          </div>
+          <div class="text">
+            Wie 4.2<br> Zusätzlich sollen alle Nachrichten in einer mySQL-Datenbank abgelegt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.4
+          </div>
+          <div class="text">
+            Wie 4.3<br> Zusätzlich soll mit einem Button der bisherige Chatverlauf aus der Datenbank gelesen werden können.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.5
+          </div>
+          <div class="text">
+            Wie 4.4<br> Zusätzlich soll der Benutzer die Möglichkeit haben, Dateien hochzuladen.<br>
+			Diese Dateien sollen anderen Benutzern sofort nach dem Upload in einer Liste bereits 
+			hochgeladener Dateien angezeigt werden, damit sie diese herunterladen können.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.6
+          </div>
+          <div class="text">
+            Wie 4.5<br> Zusätzlich soll der Benutzer eine Liste aller aktuell angemeldeten Benutzer sehen.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.7
+          </div>
+          <div class="text">
+            Wie 4.6<br> Zusätzlich soll ein Benutzer einem anderen eine persönliche Nachricht schicken können, die niemand sonst sieht.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="thema">
+
+
+      <h2>
+        ReactJS
+      </h2>
+
+      <div class="aufgaben">
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Erzeuge eine Komponente, die in einem H2-Container einen Text Deiner Wahl ausgibt.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            zu 1: Erzeuge eine weitere Komponente, die unter der Überschrift einen DIV-Container mit einem Inhalt Deiner Wahl ausgibt.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            zu 1.1: Statt eines einfachen Textes sollen in dem Div-Container vier p-Tags mit jeweils einem Text Deiner Wahl stehen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            zu 1.2: Nach den p-Tags soll eine nummerierte Liste mit Inhalt Deiner Wahl stehen. Alle &lt;li&gt;-Elemente sollen eine eigene Komponente sein.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.4
+          </div>
+          <div class="text">
+            wie 1.3: Aber die Inhalte der nummerierten Liste sollen als Parameter/Prop übergeben werden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.5
+          </div>
+          <div class="text">
+            wie 1.4: Aber die Parameter/Prop sollen ihren Wert aus einem Array holen, das im State gespeichert ist.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            In einer Komponente, die einen Div-Container erzeugt, soll ein Text Deiner Wahl stehen. Innerhalb dieses Textes soll ein &lt;span&gt;-Element sein. <br> Dieses &lt;span&gt;-Element soll bei Klick ein Alert-Fenster öffnen, das den Inhalt des &lt;span&gt;-Elementes anzeigt.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Erzeuge eine Komponente mit einem Button.<br> Jedes Mal, wenn der Button geklickt wird, soll unter dem Button ein neuer Div-Container angelegt werden.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3.1
+          </div>
+          <div class="text">
+            Erzeuge eine Komponente, in der in jeder Sekunde ein neues &lt;p&gt;-tag angelegt wird.<br> In diesen &lt;p&gt;-Tags steht eine laufende Nummer.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            Erzeuge eine Komponente, in der immer die aktuelle Zeit (jede Sekunde aktualisiert) angezeigt wird.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="thema">
+
+      <h2>
+        angularJS
+      </h2>
+
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Lege eine Angular-App an, die zwei Number-Variablen per ng-init zugewiesen bekommt. <br> Im Dokument sollen diese zwei Number-Variablen miteinander multipliziert und ausgegeben werden.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            Wie 1, aber die Variablen sollen nicht per ng-init angelegt, sondern in zwei Textfeldern eingegeben werden.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Schreibe in AngularJS eine App, die Deine Platten(CD-, MP3-)sammlung darstellt.<br> Die Variablen sollen in einem Modul stehen, das über einen Controller mit der App kommuniziert.
+            <br> Die App soll alle Platten in einem Array halten. Für jede Platte soll erstmal nur der Plattentitel gespeichert werden.<br>
+            <br> Auf der Website sollen alle Platten dargestellt werden, jede in einem eigenen Div-Container.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            Neben dem Plattennamen sollen für jede Platte auch die folgenden Informationen abgelegt werden:
+            <ul>
+              <li>Alle Songs</li>
+              <li>Label</li>
+              <li>Interpret</li>
+            </ul>
+            Die Platten sollen mit allen Informationen auf ansprechende Weise dargestellt werden.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.2
+          </div>
+          <div class="text">
+            Schaffe eine Möglichkeit, um neue Platten hinzuzufügen.<br> Der Benutzer soll alle Daten in einem jeweils eigenen Textfeld eingeben können. <br> Die Songs sollen als kommaseparierte Liste übergeben werden.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.3
+          </div>
+          <div class="text">
+            Schaffe eine Möglichkeit, um Platten zu entfernen.<br>
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.4
+          </div>
+          <div class="text">
+            Nach jedem Hinzufügen oder Entfernen einer Platte soll die Sammlung im Localstorage gespeichert werden.<br>
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.5
+          </div>
+          <div class="text">
+            Nach jedem Hinzufügen oder Entfernen einer Platte soll die Sammlung in einer <b>Datenbank</b> gespeichert werden.<br>
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Lade per Ajax die Datei daten.txt und gib den Inhalt der Textdatei aus.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.1
+          </div>
+          <div class="text">
+            Lade per Ajax die Datei daten.txt und gib die Anzahl der Zeichen in der Datei aus.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.2
+          </div>
+          <div class="text">
+            Lade per Ajax die Datei json.txt und gib alle Marke-Modell-Kombinationen in jeweils einem eigenen P-Tag aus.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.3
+          </div>
+          <div class="text">
+            Schaffe eine Möglichkeit, um neue Fahrzeuge hinzuzufügen. (Ohne die Änderungen zu speichern)
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.4
+          </div>
+          <div class="text">
+            Schaffe eine Möglichkeit, um Fahrzeuge zu entfernen. (Ohne die Änderungen zu speichern)
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+<!--
+    <div class="thema">
+
+      <h2>
+        jQuery
+      </h2>
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lass mit jQuery im Container mit der ID <i>meins</i> einen Text Deiner Wahl ausgeben
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lass mit jQuery in allen Containern mit der Klasse <i>hallo</i> einen Text Deiner Wahl ausgeben
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Wie 1.1, färbe zusätzlich den Hintergrund der Elemente senfgelb.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lege ein neues Div-Tag mit einem Inhalt Deiner Wahl an.<br> Hänge dieses Element in das Element mit der ID 'meins'.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.4
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Wie 1.3:<br> Wenn das Element angeklickt wird, dann soll in einem Alert der Inhalt des Elements ausgegeben werden.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.5
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Wie 1.4 aber:<br> Das Element soll noch ein Kind-Element haben, in dem steht, wie oft es schon angeklickt wurde.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Wenn eines der p-Tags im div-Container mit der ID <i>meins</i> angeklickt wird, dann soll es im Verlaufe von 1 Sekunde verschwinden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Wie 2, aber das Verschwinden soll um zwei Sekunden verzögert werden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.2
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Wie 2.1, aber es soll nicht nur der p-Tag verschwinden, sondern dessen Elternelement (der div-Container).
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.3
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Jedes Div-Element, über das die Maus rollt, soll eine andere Hintergrundfarbe bekommen. Sobald die Maus das Element wieder verlässt, soll es die alte Hintergrundfarbe zurückbekommen.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Wie Eventlistener-Aufgabe 2, aber verwende jQuery.<br> Versuch Dich auch an 2.1, 2.2 und 2.3.
+          </div>
+        </div>
+
+        <div class="aufgabe sehr schwer">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            Lass es schneien.<br> Auf dem Bildschirm mit dunkelblauem Hintergrund sollen Schneeflocken fallen.<br> Ein gleichmäßiger Wind soll die Flocken nach rechts treiben.<br> Ein weißer Div-Container von 2px*2px Seitenlänge ist eine gute Näherung an eine Schneeflocke.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.1
+          </div>
+          <div class="text">
+            Wie 4, alle Schneeflocken sollen mit unterschiedlichen Geschwindigkeiten fallen.<br>
+          </div>
+        </div>
+
+        <div class="aufgabe sehr schwer">
+          <div class="aufgabennr">
+            4.2
+          </div>
+          <div class="text">
+            Wie 4.1, der Wind soll in Böen wehen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            5
+          </div>
+          <div class="text">
+            Lade per Ajax die Datei Daten.txt und lass jedes Wort in einem eigenen Div-Container ausgeben.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            5.1
+          </div>
+          <div class="text">
+            Eine Seite soll zwei Eingabetextfelder haben.<br> Lass per Ajax durch die Datei get.php das Produkt der Eingaben errechnen und erzeuge so viele Div-Container.
+          </div>
+        </div>
+      </div>
+
+    </div>
+-->
+    <div class="thema">
+
+      <h2>
+        Canvas
+      </h2>
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Zeichne einen Kasten im Canvas.<br> Dieser Kasten soll halb so hoch und halb so breit wie der Canvas sein.<br>
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 1, der Kasten soll mit einem Blaugrau gefüllt sein.
+          </div>
+        </div>
+
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 1. Der Kasten soll mit einem Bild Deiner Wahl ausgefüllt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Ändere den Canvas, so dass er quadratisch ist.<br> Zeichne auf dem Canvas ein Schachbrettmuster, so dass alle Felder 20px breit und ebenso hoch sind.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.4
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 1.3, aber:<br> Das Schachbrett soll genau 8*8 Felder groß sein, egal, wie groß das Canvas ist.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.5
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Verteile auf dem Canvas 1000 Quadrate mit einer zufällig gefärbten Füllung.<br> Die Kantenlänge der Quadrate soll zufällig zwischen 10px und 50px liegen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Zeichne auf dem Canvas 5 Kreise. Diese sollen zusammen die volle Breite des Canvas einnehmen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Zeichne auf dem Canvas einen Pacman (oder Torte).
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Zeichne auf dem Canvas eine Sinuskurve.<br> Außerdem soll auch ein Koordinatenkreuz dargestellt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Lass es auf dem Canvas schneien.<br> Benutze dazu das Bild schnee.png auf dem FTP-Server.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 4, aber jede Schneeflocke soll mit einer individuellen Geschwindigkeit fallen.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.2
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 4.1, aber jede Schneeflocke soll mit einer individuellen Geschwindigkeit seitwärts abgelenkt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.3
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 4.2, aber jede Schneeflocke soll eine zufällige Größe haben.
+          </div>
+        </div>
+
+        <div class="aufgabe sehr schwer">
+          <div class="aufgabennr">
+            4.4
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 4.3, aber für jede Schneeflocke soll ein zufälliger Ausschnitt aus dem Spritesheet schnee_sprite.png genommen werden.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            5
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Zeichne auf dem Canvas einen Kreis auf der unteren Kante.<br> Bewege diesen Kreis nach rechts, bis er an die Kante schlägt. Dann soll er wieder zurückbewegt werden, bis er an die linke Kante schlägt.<br> Immer hin und her.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            6
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Lege einen Array an und fülle ihn mit 100 Werten zwischen 10 und 500.<br> Zeichne dann ins Canvas ein Balkendiagramm, welches die Werte darstellt.<br>
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            6.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 6, aber statt eines Balkendiagramms zeichne ein Liniendiagramm.<br>
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            6.2
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 6.1, zeichne zusätzlich um jeden Wert einen kleinen Kreis.<br>
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            6.3
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 6.2, schreibe zusätzlich an jeden Kreis den dazugehörigen Wert.
+          </div>
+        </div>
+        <div class="aufgabe sehr schwer">
+          <div class="aufgabennr">
+            6.4
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Wie 6 (Balkendiagramm), aber die Füllfarbe soll für den höchsten Wert rot sein, für den niedrigsten grün und für alle anderen soll die Farbe dem Wert entsprechend zwischen rot und grün liegen.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            7
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Generiere ein Tortendiagramm, das aus mindestens fünf Tortenstücken besteht.
+          </div>
+        </div>
+        <div class="aufgabe sehr schwer">
+          <div class="aufgabennr">
+            7.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_canvas.html</div>
+            Die Tortenstücke sollen innerhalb von einer Sekunde von einer Weite von 0 auf die gewünschte Weite animiert werden.
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+<!--
+    <div class="thema">
+
+      <h2>
+        Cookies, Webstorage
+      </h2>
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Lege eine String-Variable an und speichere deren Inhalt in den Cookies.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            Lies das in Aufgabe 1 gespeicherte Cookie ein und gib es in einem Alert-Fenster aus.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            Lege zu dem Cookie in Aufgabe 1 zwei weitere Cookies Deiner Wahl an. Das Ablaufdatum soll der 3.12.2020 sein.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            Wie 1.2, aber das Ablaufdatum soll in genau 24 Stunden sein.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.4
+          </div>
+          <div class="text">
+            Wie 1.3. Erstelle zusätzlich einen Button.<br> Lass den Inhalt des Cookies aus Aufgabe 1 ausgeben, sobald der Button gedrückt wird.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.5
+          </div>
+          <div class="text">
+            Wie 1.4.<br> Lass den Benutzer in ein Textfeld eingeben, welcher Cookie ausgegeben werden soll.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.6
+          </div>
+          <div class="text">
+            Wie 1.3., aber:<br> Das Ablaufdatum soll am nächsten Donnerstag sein.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.7
+          </div>
+          <div class="text">
+            Warum betrachten Datenschützer Cookies mit Argwohn?
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.8
+          </div>
+          <div class="text">
+            Was ist an folgendem Code falsch:
+            <pre>
+document.cookie.meinCookie = 'abc';
+			</pre>
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.9
+          </div>
+          <div class="text">
+            Was ist an folgendem Code falsch:
+            <pre>
+let datum = new Date();
+document.cookie = 'meinCookie = abc, expires = ' + datum;
+			</pre>
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Lege bei Klicken eines Knopfes eine String-Variable an und speichere deren Inhalt im Localstorage.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            Lies bei Klicken eines Knopfes den Inhalt des in Aufgabe 2 gespeicherten Localstorage ein und gib ihn in einem Alert-Fenster aus.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            2.2
+          </div>
+          <div class="text">
+            Lege bei Klicken eines Knopfes zwei weitere Items im Localstorage an.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            2.3
+          </div>
+          <div class="text">
+            Lies bei Klicken eines Knopfes den Localstorage aus Aufgabe 2 ein und gib den Inhalt aus.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            2.4
+          </div>
+          <div class="text">
+            Lies bei Klicken eines Knopfes <b>alle</b> Items aus dem Localstorage ein und gib deren Inhalt aus.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.5
+          </div>
+          <div class="text">
+            Lege in einer Variablen ein Array mit allen Zahlen von 1 bis 100 an.<br> Bei Klicken eines Knopfes soll das Array korrekt ins Localstorage geschrieben werden.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.6
+          </div>
+          <div class="text">
+            Bei Klicken eines Knopfes soll der gsamte Inhalt des document.body ins Localstorage geschrieben werden.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Lade per Ajax die Datei json.txt.<br> Schreibe dann das Baujahr des ersten Fahrzeugs in den Localstorage.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3.1
+          </div>
+          <div class="text">
+            Lade per Ajax die Datei json.txt.<br> Schreibe dann die Marken aller Fahrzeuge als Array in den Localstorage.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            <div class="file">uebung_formular.html</div>
+            Wenn das Dokument geladen wird, dann soll in dem Textarea automatisch der selbe Text stehen wie das letzte Mal, als das Dokument geöffnet war. Wenn noch kein entsprechender Eintrag im Localstorage steht, soll der Textarea unverändert bleiben.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_formular.html</div>
+            Wie 4, zusätzlich sollen auch die Radio-Knöpfe die selbe Auswahl zeigen wie das letzte Mal, als das Dokument geöffnet war.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.2
+          </div>
+          <div class="text">
+            Wie Aufgabe Eventlistener 2<br> Aber wenn das Dokument neu geladen wird, dann sollen die in der letzten Session angelegten Div-Container automatisch wieder da sein.
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+-->
+    <div class="thema">
+
+      <h2>
+        AJAX
+      </h2>
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Lade die Datei 'daten.txt' per Ajax vom Server und gib den Inhalt in einem Div-Container aus.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            Lade die Datei 'daten.txt' per Ajax vom Server und gib in einem Div-Container aus, wieviele Zeichen das Element enthält.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            Erstelle eine Seite mit einem Eingabe-Textfeld und einem Button.<br> Der Benutzer soll in das Textfeld eingeben, welche Datei geladen werden soll.<br> Bei Betätigung des Buttons soll die Datei geladen und ihr Inhalt in einem Div-Container ausgegeben werden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Lade die XML-Datei <i>familie.xml</i> per AJAX und lass die Anzahl der Familienmitglieder ausgeben
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            Lass den Vornamen des dritten Mitgliedes ausgeben.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.2
+          </div>
+          <div class="text">
+            Lass die Vornamen aller Mitglieder ausgeben.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.3
+          </div>
+          <div class="text">
+            Lass das Alter von Kevin ausgeben.<br> Unabhängig davon, an welcher Stelle des XML-Baumes sich der Knoten befindet.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            2.5
+          </div>
+          <div class="text">
+            Basierend auf 2.4: Lass in einer Tabelle alle Informationen aller Familienmitglieder geordnet darstellen.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            2.7
+          </div>
+          <div class="text">
+            Wie 2.6, aber das Bild soll auch in der Tabelle angezeigt werden.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Das Programm soll die Datei get.php ansprechen.<br> Es sollen zwei zufällige, ganze Zahlen als Parameter übergeben und das Ergebnis in einem Div-Container dargestellt werden.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            3.1
+          </div>
+          <div class="text">
+            Wie 3, aber zusätzlich zum Ergebnis soll auch die Rechnung ausgegeben werden.<br> Beispiel: 12 * 12 = 144
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            3.2
+          </div>
+          <div class="text">
+            Wie 3.1, aber der Benutzer soll die Zahl in einem Textfeld eingeben.<br> Die Rechnung (der Aufruf des PHP-Scriptes) findet erst bei Betätigung eines Buttons statt.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            Erstelle eine Textdatei mit dem folgenden Inhalt:
+            <pre>
+54,32,8,12,98,53,2,152,14,75,6,98,15,6,354,4,31,684,31,81,3,38
+			</pre> Lade diese Datei per Ajax und wandle die Zahlen in ein Array um.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4.1
+          </div>
+          <div class="text">
+            Basierend auf 5:<br> Lass jede Zahl in einem eigenen DIV-Container ausgeben.
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+    <div class="thema">
+
+      <h2>
+        Formulare
+      </h2>
+      <div class="aufgaben">
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Entwickle einen Taschenrechner.<br> Er soll aus zwei Eingabe- und einem Ausgabetextfeld bestehen.<br> Außerdem soll er für alle fünf Grundrechenarten einen Knopf haben.<br> Wenn einer der Knöpfe für die Operatoren geklickt wird, dann sollen die Werte aus den Eingabetextfeldern entsprechend verrechnet und das Ergebnis im Ausgabe-Textfeld ausgegeben werden.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            Erweitere den Taschenrechner durch eine Checkbox.<br> Wenn die Checkbox angehakt ist, dann soll das Ergebnis gerundet werden.<br> Natürlich soll die Checkbox eine entsprechende Beschriftung tragen.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            Erweitere den Taschenrechner durch die folgenden Funktionen:<br>
+            <ul>
+              <li>Pythagoras</li>
+              <li>Fläche eines Rechtecks</li>
+              <li>Potenzierung</li>
+              <li>Sin/Cos/Tan</li>
+            </ul>
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            Erweitere den Taschenrechner durch drei Radiobuttons:<br> Wenn der erste Button gedrückt wird, soll die Ausgabe Schwarz auf Weiß erfolgen.<br> Wenn der zweite Button gedrückt wird, soll die Ausgabe Weiß auf Schwarz erfolgen.<br> Wenn der dritte Button gedrückt wird, soll die Ausgabe Braun auf Beige erfolgen.<br>
+          </div>
+        </div>
+
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Eine Seite soll ein Eingabetextfeld und ein Button sowie mehrere Elemente verschiedener Klassen enthalten.<br> Bei Betätigung des Buttons soll ausgegeben werden, wieviele Elemente der Klasse es gibt, deren Name der Benutzer in das Textfeld eingibt.
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            <div class="file">uebung_formular.html</div>
+            Schreibe in den Textarea den Text "Das ist alles viel zu einfach!"
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            <div class="file">uebung_formular.html</div>
+            Alle 500ms soll das jeweils nächste Zeichen aus dem Textarea genommen und an dem Container mit der Klasse <i>ausgabe</i> angehängt werden. <br> Auf diese Weise soll der Text langsam im Container erscheinen.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            4.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_formular.html</div>
+            Wie 4, aber:<br> Damit das Erscheinen des Textes aussieht, wie von einem Menschen geschrieben, soll der Zeitabstand zwischen den erscheinenden Zeichen zufällig zwischen 50 und 800ms variieren.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="thema">
+
+      <h2>
+        Eventlistener
+      </h2>
+	  
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Sobald auf einen DIV-Container geklickt wurde, lass den Inhalt desselben in einem Alert-Fenster ausgeben.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Sobald auf einen DIV-Container geklickt wurde, lass den Inhalt desselben einem neu erzeugten DIV-Container am Ende der Seite ausgeben.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Die Seite soll nur aus einem Knopf bestehen.<br> Wenn der Knopf gedrückt wird, dann wird ein neues div-Element erzeugt. Dieses soll einen Innen- und einen Außenabstand aufweisen (CSS), einen dünnen Rand und eine Hintergrundfarbe.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            Erweitere die Seite dadurch, dass jeder neu erzeugte Container verschwindet, sobald er angeklickt wird.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.2
+          </div>
+          <div class="text">
+            Wie 2.1. Aber die Container sollen je einen Button tragen, der den Container bei Klick löscht. Wenn der Container angeklickt wird, soll nichts passieren.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.3
+          </div>
+          <div class="text">
+            Wie 2.2, aber jeder neu erzeugte Container soll eine zufällige Hintergrundfarbe aufweisen.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.4
+          </div>
+          <div class="text">
+            Wie 2.3, aber in jedem DIV-Container soll stehen, der wievielte Container es ist.
+          </div>
+        </div>
+		
+        <div class="aufgabe ">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            <div class="file">uebung_events.html</div>
+            Das Dokument enthält u.a. zwei Bilder, die nicht geladen werden konnten.<br> Es sollen für jedes Bild, das nicht geladen werden konnte, eine Fehlermeldung erscheinen, welche die URL meldet, die nicht geladen werden konnte.
+          </div>
+        </div>
+		
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_events.html</div>
+            Wie 3, aber zusätzlich sollen die Bilder, die einen Fehler erzeugt haben, mit einem dicken, roten Rand hervorgehoben werden.
+          </div>
+        </div>
+		
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3.2
+          </div>
+          <div class="text">
+            <div class="file">uebung_events.html</div>
+            Es soll nur eine Fehlermeldung erscheinen, die alle Elemente mit Fehler meldet.
+          </div>
+        </div>
+		
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3.3
+          </div>
+          <div class="text">
+            <div class="file">uebung_events.html</div>
+            Wie 3. Aber statt der Fehlermeldungen sollen die nicht ladbaren Bilder durch andere ersetzt werden.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.4
+          </div>
+          <div class="text">
+            <div class="file">uebung_events.html</div>
+            Wenn der Button geklickt wurde, soll ausgegeben werden, welcher Radiobutton ausgewählt ist.
+          </div>
+        </div>
+		
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            3.5
+          </div>
+          <div class="text">
+            <div class="file">uebung_events.html</div>
+            Wenn der Button geklickt wurde, soll der jeweils nächste Radiobutton ausgewählt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Jedes p-Tag, das angeklickt wird, soll an den Anfang der Seite kopiert werden.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            5
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Jedes p-Tag, das angeklickt wird, soll dupliziert und das Duplikat vor dem Original eingefügt werden.
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            6
+          </div>
+          <div class="text">
+            <div class="file">uebungs_strings1.html</div>
+            Sobald der Button geklickt wird, lass die ersten 30 Zeichen aus dem 'hallo'-Container in den <i>ausgabe</i>-Container ausgeben.
+          </div>
+        </div>
+		
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            6.1
+          </div>
+          <div class="text">
+            <div class="file">uebungs_strings1.html</div>
+            Sobald der Button geklickt wird, lass die erste Hälfte der Zeichenkette aus dem 'hallo'-Container in den <i>ausgabe</i>-Container ausgeben.
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            6.2
+          </div>
+          <div class="text">
+            <div class="file">uebungs_strings1.html</div>
+            Bei jedem Klick auf den Button soll ein Zeichen nach dem anderen aus der Zeichenkette im 'hallo'-Container im 'ausgabe'-Container erscheinen.
+            <br>
+          </div>
+        </div>
+		
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            7
+          </div>
+          <div class="text">
+            Lege zwei Variablen an, welche jeweils eine beliebige Zeichenkette enthalten.
+            <br> Wenn ein Button geklickt wird, soll mit einer Wahrscheinlichkeit von 50% zufällig die eine oder die andere Zeichenkette ausgegeben werden.
+          </div>
+        </div>
+		
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            8
+          </div>
+          <div class="text">
+            <div class="file">uebung_strings1.html</div>
+            Das Programm soll im Div-Container mit der Klasse 'ausgabe' schreiben, wieviele Zeichen in dem Container mit der Klasse 'hallo' stehen.
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="thema">
+      <h2>
+        DOM
+      </h2>
+      <div class="aufgaben">
+
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lass den Inhalt des Containers mit der ID 'meins' ausgeben.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lass im Container mit der ID 'meins' den Text 'Javascript macht Laune' ausgeben.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Gib allen P-Elementen die Klasse <i>rot</i>
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Gib allen P-Elementen außer dem dritten die Klasse <i>rot</i>
+          </div>
+        </div>
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.4
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lass in einem Alert-Fenster ausgeben, wieviele p-Tags auf der Seite vorkommen.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.5
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lass in einem Alert-Fenster ausgeben, wieviele p-Tags und div-Tags zusammen auf der Seite vorkommen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.6
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lege einen neuen Div-Container mit beliebigem Inhalt an und lass ihn vor dem Element mit der ID <i>meins</i> darstellen.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.7
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Lass alle p-Tags im Element mit der ID <i>meins</i> entfernen.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.8
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Erzeuge eine Kopie des ersten div-Containers und hänge diese ans Ende des Dokuments.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.9
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Erzeuge im dritten Div-Container mit der Klasse 'hallo' einen neuen p-Tag, welcher den Text "Javascript ist ganz einfach" enthält. <br> Dieses Element soll eine grüne Schrift und eine Schriftgröße von 50px haben.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.10
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Gib per Alert aus, welcher Text im ersten p-Tag steht.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.11
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Entferne alle p-Tags, in denen der Text <i>Wiesel schmecken abscheulich</i> steht.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.12
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Gib allen p-Tags, in denen der Text <i>Wiesel schmecken abscheulich</i> steht, die CSS-Klasse <i>rot</i>.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.13
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom.html</div>
+            Erzeuge ein a-Element, das bei Klick auf die Seite http://www.google.de führt.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Erzeuge alle zwei Sekunden einen neuen Div-Container und hänge ihn an das Dokument an.<br> Der Container soll einen dunklen Rand, helle Hintergrundfarbe und natürlich einen Textinhalt haben.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3
+          </div>
+          <div class="text">
+            Erzeuge 20 Div-Container.<br> In jedem Div-Container soll eine zufällige Zahl stehen.<br> Jeder Div-Container soll eine CSS-Klasse tragen und mit Rahmen, Hintergrundfarbe und Außenabstand ausgestattet sein.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.1
+          </div>
+          <div class="text">
+            Erzeuge eine Tabelle mit 10 Spalte und 20 Zeilen.<br> In jeder Tabellenzelle soll eine zufällige Zahl stehen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.2
+          </div>
+          <div class="text">
+            Erzeuge eine Tabelle mit 2 Spalten und 20 Zeilen.<br> In jeder Zeile sollen die Zahlen von 1 bis 20 und der Wert der entsprechenden Stelle der Fibonacci-Reihe stehen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4
+          </div>
+          <div class="text">
+            Erzeuge 20 Div-Container mit einem Text Deiner Wahl. <br> Jeder soll eine zufällige Hintergrundfarbe tragen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            4.1
+          </div>
+          <div class="text">
+            Auf einer Webseite solle jede Sekunde ein neuer DIV-Container erzeugt werden.<br> Jeder soll eine zufällige Hintergrundfarbe tragen.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            5
+          </div>
+          <div class="text">
+            Lege eine Webseite mit 2 Div-Containern an.
+            <br> Dann tausche den Inhalt der beiden Div-Container aus.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            6
+          </div>
+          <div class="text">
+            Benutzer gibt in einem Prompt eine Zahl ein.
+            <br> So oft wird dann ein Bild (das natürlich vorher heruntergeladen wird und in einem Ordner im Dateisystem bereit liegt) in die Seite eingebunden.
+            <br> Das Bild soll nur mit einer Breite von 200px angezeigt werden.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            7
+          </div>
+          <div class="text">
+            Lege eine Webseite mit mehreren Elementen (Div-Containern) an.
+            <br> Sorge dafür, dass jeder 2te Div-Container farblich hervorgehoben wird.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            8
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom2.html</div>
+            Alle p-Tag sollen farblich hinterlegt werden.
+            <br> Das erste soll weiß sein, das letzte grün, alle anderen bekommen entsprechende Abstufungen.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            9
+          </div>
+          <div class="text">
+            <div class="file">uebung_dom2.html</div>
+            Lass in einem Alert-Fenster den Inhalt des ersten p-Elements ausgeben.<br> Jedes Mal, wenn das Alert-Fenster bestätigt wird, soll der Inhalt des nächsten p-Tags ausgegeben werden.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            10
+          </div>
+          <div class="text">
+            Lass in einer Tabelle das 'kleine Ein mal Eins' ausgeben.<br> Ähnlich, wie es auf dieser Seite geschieht: <a href="http://www.kikisweb.de/wissen/mathe/einmaleins/einmaleins.htm">Link</a>
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            11
+          </div>
+          <div class="text">
+            Lass pro Sekunde einen zufälligen Buchstaben in einem eigenen Div-Container ausgeben.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            12
+          </div>
+          <div class="text">
+            Mach die ersten 12 Stellen der Fibonacci-Reihe sichtbar:<br> Für jede Stelle erzeuge einen Div-Container.<br> In diesem Div-Container sollen so viele Elemente nebeneinander stehen, wie die entsprechende Stelle der Fibonacci-Reihe groß ist. (1, 1, 2, 3, 5, 8, 12, ...)<br> Wenn sie nicht mehr nebeneinander passen, kann gerne umgebrochen werden.
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="thema">
+
+      <h2>
+        Objekte
+      </h2>
+	  
+      <div class="aufgaben">
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1
+          </div>
+          <div class="text">
+            Lege ein Objekt an, das für ein Gebäude die folgenden Informationen enthält:
+            <ul>
+              <li>
+                Strasse
+              </li>
+              <li>
+                Hausnummer
+              </li>
+              <li>
+                Postleitzahl
+              </li>
+              <li>
+                Ort
+              </li>
+              <li>
+                Eigentümer
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            1.1
+          </div>
+          <div class="text">
+            Lass die gesamte Adresse ausgeben.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.2
+          </div>
+          <div class="text">
+            Füge zu dem Objekt eine Methode (Funktion) hinzu, welche als Rückgabewert (return) die gesamte Adresse als String liefert. <br> Benutze diese Methode, um die gesamte Adresse auszugeben.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            1.3
+          </div>
+          <div class="text">
+            Erweitere das Objekt durch ein Array. <br> Dieses Array soll vier Mietparteien darstellen, jede in einem eigenen Objekt.<br> Jedes Mietparteien-Objekt soll enthalten:
+            <ul>
+              <li>
+                Vorname
+              </li>
+              <li>
+                Nachname
+              </li>
+              <li>
+                Wohnungsnummer
+              </li>
+              <li>
+                Kaltmiete
+              </li>
+            </ul>
+            Gib den ganzen Namen des zweiten Mieters aus.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.4
+          </div>
+          <div class="text">
+            Aufbauend auf 1.3: Errechne die gesamte Kaltmiete, die das Gebäude einbringt.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.5
+          </div>
+          <div class="text">
+            Erstelle eine Methode, die die Namen aller Mieter mit deren Wohnungsnummer ausgibt.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.6
+          </div>
+          <div class="text">
+            Erstelle eine Methode, die einen neuen Mieter im Array anlegt.<br> Wenn die Wohnungsnummer schon existiert, soll der alte Mieter überschrieben werden.
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.7
+          </div>
+          <div class="text">
+            Erstelle eine Methode, die einen Mieter im Array löscht.<br>
+          </div>
+        </div>
+
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            1.8
+          </div>
+          <div class="text">
+            Erstelle eine Methode, die alle Mieter nach der Wohnungsnummer sortiert.<br>
+          </div>
+        </div>
+
+        <div class="aufgabe ">
+          <div class="aufgabennr">
+            2
+          </div>
+          <div class="text">
+            Erstelle einen Kunstruktor, der Objekte für Kinofilme anlegt.<br> Jedes Objekt soll die folgenden Informationen enthalten:
+            <ul>
+              <li>
+                Filmtitel
+              </li>
+              <li>
+                Regisseur
+              </li>
+              <li>
+                Laufzeit in Minuten
+              </li>
+              <li>
+                Erscheinungsjahr
+              </li>
+            </ul>
+            Verwende diesen Konstruktor, um 4 Filme Deiner Wahl als Objekt anzulegen.
+          </div>
+        </div>
+        <div class="aufgabe ">
+          <div class="aufgabennr">
+            2.1
+          </div>
+          <div class="text">
+            Erweitere den Konstruktor durch eine Methode, die das aktuelle Alter des Filmes per return liefert.
+          </div>
+        </div>
+        <div class="aufgabe ">
+          <div class="aufgabennr">
+            2.2
+          </div>
+          <div class="text">
+            Wie 2.1, aber alle erzeugten Objekte sollen in einem Array liegen.<br> Lass dann die gesamte Laufzeit aller Filme ausgeben.
+          </div>
+        </div>
+        <div class="aufgabe schwer">
+          <div class="aufgabennr">
+            2.3
+          </div>
+          <div class="text">
+            Aufbauend auf 2.2:<br> Erstelle einen weiteren Konstruktor / Klasse. <br> Diese soll auf dem vorigen Konstruktor aufbauen und dessen Eigenschaften erben.<br> Der neue Konstruktor ist auf Urlaubsfilme spezialisiert und erwartet zusätzlich den Drehort und den Reiseveranstalter als Parameter.<br> Lege zwei Filme mit dieser Klasse an.
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.4
+          </div>
+          <div class="text">
+            Was ist an folgendem Code falsch?
+            <pre>
+				let Auto = new Class {
+					
+					constructor ( marke, modell, leistung ){	
+						this.marke = marke;
+						this.modell = modell;
+						this.leistung = leistung;
+					}
+				}				
+				let meinAuto = new Auto ('Hyundai', 'i30', 100);
+			</pre>
+          </div>
+        </div>
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            2.5
+          </div>
+          <div class="text">
+            Was ist an folgendem Code falsch?
+            <pre>
+				let Auto = {
+					this.marke = 'Hyundai';
+					this.modell = 'i30';
+				}				
+			</pre>
+          </div>
+        </div>
+
+
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            3 (Date-Objekt)
+          </div>
+          <div class="text">
+            Lass in einem Div-Container die aktuelle Uhrzeit ausgeben.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            3.1
+          </div>
+          <div class="text">
+            Lass in einem Div-Container die aktuelle Uhrzeit ausgeben.<br> Diese Uhrzeit soll immer aktuell sein.
+          </div>
+        </div>
+        <div class="aufgabe leicht">
+          <div class="aufgabennr">
+            3.2
+          </div>
+          <div class="text">
+            Lass in der Konsole ausgeben, welchen Wochentag wir gerade haben.
+          </div>
+        </div>
+
+        <div class="aufgabe">
+          <div class="aufgabennr">
+            3.3
+          </div>
+          <div class="text">
+            Lass ausgeben, wie viele Tage es noch bis zum nächsten Weihnachten dauert.
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="thema">
+
+        <h2>
+          Arrays
+        </h2>
+        <div class="aufgaben">
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1
+            </div>
+            <div class="text">
+              Lege ein Array mit 100 Stellen an und fülle jede Speicherstelle mit einer zufälligen ganzen Zahl zwischen 0 und 50. Lass den gesamten Inhalt ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.1
+            </div>
+            <div class="text">
+              Lass den Durchschnitt aller Zahlen in diesem Array ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.2
+            </div>
+            <div class="text">
+              Multipliziere jede Speicherstelle mit Pi und lass das Array ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.3
+            </div>
+            <div class="text">
+              Hänge an das bestehende Array 100 weitere Speicherstellen an und fülle sie mit zufälligen Zahlen zwischen 500 und 1000.<br> Lass das Array ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.4
+            </div>
+            <div class="text">
+              Entferne die ersten 50 Speicherstellen und lass das Array ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.5
+            </div>
+            <div class="text">
+              Ersetze jede zweite Speicherstelle durch die Zahl 0 und lass das Array ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr schwer">
+              2
+            </div>
+            <div class="text">
+              Erzeuge ein Array für Lottozahlen.
+              <br> D.h. Speichere in diesem Array sechs Zufallszahlen von 1 bis 49 und stelle dabei sicher, dass keine der Zahlen doppelt vorkommt.
+            </div>
+          </div>
+
+          <div class="aufgabe ">
+            <div class="aufgabennr">
+              3
+            </div>
+            <div class="text">
+              Erzeuge ein Array, welches die Zahlen von 0 bis 100 enthält.
+              <br> Lege eine Funktion an, die dieses Array durchmischt.
+            </div>
+          </div>
+
+          <div class="aufgabe ">
+            <div class="aufgabennr">
+              3.1
+            </div>
+            <div class="text">
+              Lass jede Speicherstelle des Array einzeln mit seinem Index ausgeben.<br> z.B. so:<br> 1: 54<br> 2: 32<br> 3: 86<br> 4: 17 ...
+            </div>
+          </div>
+
+          <div class="aufgabe ">
+            <div class="aufgabennr">
+              3.2
+            </div>
+            <div class="text">
+              wie 3.1, aber: Lass nur die Speicherstellen des Array ausgeben, die kleiner sind als 50.
+            </div>
+          </div>
+
+          <div class="aufgabe ">
+            <div class="aufgabennr">
+              3.3
+            </div>
+            <div class="text">
+              Was ist an folgendem Code falsch?
+              <pre>
+					let z = Math.random();
+					
+					if ( z < .5 ) let wert = 42;
+					else let wert = 23;
+					
+					alert ( wert );
+				</pre>
+            </div>
+          </div>
+
+          <div class="aufgabe ">
+            <div class="aufgabennr">
+              3.4
+            </div>
+            <div class="text">
+              Was ist an folgendem Code falsch?
+              <pre>
+					let meinArray = [ 5, 8, 6, 7 ];
+					
+					let ausgabe = (wert, index) => console.log( index + ': ' + wert );
+					
+					meinArray.forEach ( ausgabe() );
+				</pre>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4
+            </div>
+            <div class="text">
+              Erzeuge ein Array mit 5 Speicherstellen und fülle es mit Namen Deiner Wahl.
+              <br> Tausche dann die zweite und die vierte Speicherstelle gegeneinander aus und lass das Array ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5
+            </div>
+            <div class="text">
+              Lege zwei Arrays mit einigen Vor- und Nachnamen an.
+              <br> Erzeuge 20 zufällige Vorname/Nachname-Kombinationen und lass sie ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              5.1
+            </div>
+            <div class="text">
+              Wie 5, aber lass einige der Kombinationen Doppelnamen tragen.
+            </div>
+          </div>
+
+          <div class="aufgabe ">
+            <div class="aufgabennr">
+              6
+            </div>
+            <div class="text">
+              Du hast einen String wie "4, 85, 6, 14, 8, 15, 23".<br> Wandle ihn in ein Array um, das nach Größe sortiert ist.
+            </div>
+          </div>
+
+          <div class="aufgabe ">
+            <div class="aufgabennr">
+              6.1
+            </div>
+            <div class="text">
+              Lege Dir ein Array Deiner Wahl mit Namen an.<br> Lass alle Namen in diesem Array in der Konsole ausgeben. <br> Die einzelnen Namen sollen mit ' - ' voneinander getrennt sein.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="thema">
+
+        <h2>
+          Funktionen, Zeitsteuerung
+        </h2>
+        <div class="aufgaben">
+
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1
+            </div>
+            <div class="text">
+              Lege eine Funktion an, welche einen Text ausgibt.<br> Ruf diese Funktion 5mal auf, so dass der Text fünf mal erscheint.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.1
+            </div>
+            <div class="text">
+              Lege eine Funktion an, welche einen Text ausgibt, der als Parameter übergeben wird.<br> Ruf diese Funktion 5mal auf, so dass 5mal der Text erscheint, der jeweils übergeben wurde.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.2
+            </div>
+            <div class="text">
+              Lege eine Funktion an.<br> Ruf diese Funktion 5mal auf. <br> Bei jedem Aufruf der Funktion soll ausgegeben werden, wie oft die Funktion schon aufgerufen wurde.
+            </div>
+          </div>
+
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2
+            </div>
+            <div class="text">
+              Was ist an dem folgenden Code falsch:
+              <pre>
+					let f = p1, p2 => p1 * p2;
+				</pre>
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.1
+            </div>
+            <div class="text">
+              Was ist an dem folgenden Code falsch:
+              <pre>
+					let f = p1 => {
+						p1 * p1
+					};
+					
+					let quadrat = f ( 4 );
+				</pre>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3
+            </div>
+            <div class="text">
+              Erzeuge eine Funktion, die für einen übergebenen Parameter überprüft, ob dieser durch 3 teilbar ist.<br> Das Ergebnis der Prüfung soll in einem Alert-Fenster ausgegeben werden.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3.1
+            </div>
+            <div class="text">
+              Erzeuge eine Funktion, an die zwei Parameter übergeben werden.<br> Dann soll überprüft werden, ob der erste Parameter durch den zweiten Parameter teilbar ist.<br> Das Ergebnis der Prüfung soll in einem Alert-Fenster ausgegeben werden.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4
+            </div>
+            <div class="text">
+              Der Benutzer soll eine positive oder negative Zahl als Eingabe machen.<br> Mittels einer Funktion mit Rückgabewert soll dann der Betrag dieser Zahl in einer Variablen gespeichert werden.<br> Mit anderen Worten: Programmiere die Math.abs()-Funktion nach.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              5
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Eingabe machen.<br> Diese wird an eine Funktion übergeben, die dann die Wurzel der übergebenen Zahl ausgibt.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              5.1
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Eingabe machen.<br> Diese wird an eine Funktion übergeben, die dann die Wurzel der übergebenen Zahl zurückgibt.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              5.2
+            </div>
+            <div class="text">
+              Der Benutzer soll zwei Eingaben machen.<br> Diese werden an eine Funktion übergeben, die dann das Produkt der beiden Zahlen ausgibt.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              5.3
+            </div>
+            <div class="text">
+              Der Benutzer soll zwei Eingaben machen.<br> Diese werden an eine Funktion übergeben, die dann das Produkt der beiden Zahlen zurückgibt.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5.4
+            </div>
+            <div class="text">
+              Der Benutzer soll zwei Eingaben machen.<br> Diese werden an eine Funktion übergeben<br> Die Funktion nimmt die beiden Zahlen als Katheten eines rechtwinkligen Dreiecks und errechnet dann die Hypothenuse (Pythagoras).<br> Das Ergebnis soll ausgegeben werden.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5.5
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Eingabe machen.<br> Dann soll einmal pro Sekunde der Text in einem Alert-Fenster erscheinen.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5.6
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Zahl eingeben.<br> Dann soll das Programm so viele Sekunden warten und schließlich den Text "Javascript ist einfach!" ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              5.7
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Zahl eingeben.<br> Diese Zahl soll an eine Funktion übergeben werden, die überprüft, ob es sich bei dieser Zahl um eine Primzahl handelt.
+            </div>
+          </div>
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              5.8
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Zahl eingeben.<br> Diese Zahl soll an eine Funktion übergeben werden, die überprüft, ob diese Zahl Teil der Fibonacci-Reihe ist.
+            </div>
+          </div>
+          <div class="aufgabe sehr schwer">
+            <div class="aufgabennr">
+              5.9
+            </div>
+            <div class="text">
+              Der Benutzer soll zwei Zahlen eingeben.<br> Das Programm soll alle Primzahlen zwischen den Benutzereingaben ausgeben.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              6
+            </div>
+            <div class="text">
+              Lege eine Funktion an, die den übergebenen Parameter mit sich selbst multipiziert und ausgibt.
+              <br> Die Funktion soll mittels einer Schleife 50 mal aufgerufen werden. Als Parameter wird der Schleifenindex (Die Anzahl der bisherigen Schleifendurchläufe) übergeben.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              6.1
+            </div>
+            <div class="text">
+              Wie 6, aber sorge dafür, dass die Funktion nur aufgerufen wird, wenn der Index durch 3 teilbar ist.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              7
+            </div>
+            <div class="text">
+              Entwickle eine Funktion, die in einem übergebenen String das erste <i>X</i> findet und durch ein <i>U</i> ersetzt.<br> Das Ergebnis soll zurückgegeben werden.
+            </div>
+          </div>
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              7.1
+            </div>
+            <div class="text">
+              Entwickle eine Funktion, die in einem übergebenen String alle <i>X</i> findet und durch <i>U</i> ersetzt.<br> Das Ergebnis soll zurückgegeben werden.
+            </div>
+          </div>
+
+          <div class="aufgabe richtig schwer">
+            <div class="aufgabennr">
+              7.2
+            </div>
+            <div class="text">
+              Entwickle eine Funktion, die in einem übergebenen String alle Umlaute findet und in den HTML-Sonderzeichencode umwandelt.<br> Das Ergebnis soll in einem Alert ausgegeben werden.
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="thema">
+
+        <h2>
+          Schleifen
+        </h2>
+        <div class="aufgaben">
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1
+            </div>
+            <div class="text">
+              Erzeuge einen String Deiner Wahl.<br> Lass jedes zweite Zeichen (auch Leerzeichen) in einem Alert-Fenster ausgeben.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.1
+            </div>
+            <div class="text">
+              Wie 1, aber alle Zeichen sollen gemeinsam in einem einzigen Alert-Fenster erscheinen.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.2
+            </div>
+            <div class="text">
+              Erzeuge einen String Deiner Wahl.<br> Dreh den gesamten String um und lass ihn in einem Alert-Fenster ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2
+            </div>
+            <div class="text">
+              Erzeuge eine Schleife, die alle Zahlen von 1 bis 100 addiert.<br> Gib die Summe in einem Alert-Fenster aus.
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.1
+            </div>
+            <div class="text">
+              Erzeuge eine Schleife, die alle Zahlen von 100 bis 0 rückwärts zählt und per document.write() ausgibt.
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.2
+            </div>
+            <div class="text">
+              Erzeuge eine Schleife, die 30 Mal eine zufällige Zahl ausgibt.
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.3
+            </div>
+            <div class="text">
+              Erzeuge eine Schleife, die zählt, wieviele von 100 zufälligen Zahlen zwischen 0 und 1 größer sind als 0.75.
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.4
+            </div>
+            <div class="text">
+              Erzeuge eine Schleife, die die ersten 10 Vielfachen von 12 ausgibt.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              3
+            </div>
+            <div class="text">
+              Zahlenspiel:<br> Der Computer erzeugt eine ganze Zahl zwischen 1 und 1000.<br> Der Benutzer muss raten, um welche Zahl es sich handelt.<br> Bei jedem Rateversuch meldet der Computer, ob die gesuchte Zahl größer oder kleiner als die eingegebene Zahl ist. <br> Dann kann der Benutzer es nochmal versuchen, bis er die richtige Zahl gefunden hat.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4
+            </div>
+            <div class="text">
+              Benutzer gibt einen Text ein. Der Computer gibt dann ( per document.write() ) diesen Text ein Zeichen nach dem anderen wieder aus. <br> Außerdem soll nach jedem Zeichen ein Unterstrich stehen.
+            </div>
+          </div>
+
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5
+            </div>
+            <div class="text">
+              Ein Prompt-Fenster soll vom Benutzer immer wieder eine Zahl abfragen.<br> Alle eingegebenen Werte sollen addiert werden und wenn der Benutzer keine Zahl eingibt (das Textfeld leer bleibt), dann wird das Ergebnis ausgegeben.<br>
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5.1
+            </div>
+            <div class="text">
+              Wie 5: Es soll zusätzlich ausgegeben werden, wieviele Eingaben gemacht wurden.<br>
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5.2
+            </div>
+            <div class="text">
+              Wie 5.1: Lass neben der Summe auch den Durchschnitt der eingegebenen Zahlen ausgeben.
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              5.3
+            </div>
+            <div class="text">
+              Wie 5: Aber es sollen genau 5 Zahlen abgefragt werden. <br> Wenn der Benutzer keine Eingabe macht, dann soll das als 0 gezählt werden.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              6
+            </div>
+            <div class="text">
+              <br> Der Benutzer soll einen Text per Prompt eingeben.
+              <br> Das Programm soll dann das eingegebene Wort umdrehen und wieder ausgeben.
+              <br> Auf diese Weise soll aus 'Hallo Welt' die Ausgabe 'tleW ollaH' werden.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              6.1
+            </div>
+            <div class="text">
+              <br> Der Benutzer soll einen Text per Prompt eingeben.
+              <br> Das Programm soll dann überprüfen, ob es sich bei dem eingegebenen Wort um ein Palindrom handelt.
+              <br> Ein Palindrom ist ein Wort, das vorwärts wie rückwärts gelesen identisch ist. Z.B.:
+              <br>
+              <ul>
+                <li>
+                  reittier
+                </li>
+                <li>
+                  rentner
+                </li>
+                <li>
+                  ein esel lese nie
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              7
+            </div>
+            <div class="text">
+              Computer soll die ersten 20 Zahlen der Fibonacci-Reihe ausgeben.<br>
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              7.1
+            </div>
+            <div class="text">
+              Wie 7, aber der Benutzer gibt vorher an, wieviele Zahlen der Fibonacci-Reihe ausgegeben werden sollen.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              8
+            </div>
+            <div class="text">
+              Erzeuge mit Hilfe einer Schleife einen String mit einer Länge von 500 Zeichen, der aus den Zeichen A, G, C und T besteht.<br> Diese sollen mit einer Wahrscheinlichkeit von jeweils 25% zufällig ausgewählt werden.
+
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              8.1
+            </div>
+            <div class="text">
+              Erzeuge einen String wie in 8 und entferne dann alle 'G's aus dem String.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              9
+            </div>
+            <div class="text">
+              Lass den Benutzer einen Text eingeben und ermittle dann, wie viele Leerzeichen in diesem Text vorkommen.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="thema">
+
+        <h2>
+          Bedingte Anweisung
+        </h2>
+
+        <div class="aufgaben">
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1
+            </div>
+            <div class="text">
+              Erzeuge eine Variable vom Typ Boolean mit einem Wert Deiner Wahl und eine If-Anweisung.
+              <br> Wenn die Variable den Wert true hat, soll "Stimmt!" ausgegeben werden, sonst "Stimmt nicht!".
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.1
+            </div>
+            <div class="text">
+              Wie 1, aber: Lass die boolsche Variable zufällig mit true oder false belegen.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.2
+            </div>
+            <div class="text">
+              Erzeuge <b>zwei</b> Variablen vom Typ Boolean mit einem Wert Deiner Wahl und eine If-Anweisung.
+              <br> Wenn beide Variablen den Wert true haben, soll "Stimmt!" ausgegeben werden, sonst "Stimmt nicht!".
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.3
+            </div>
+            <div class="text">
+              Wie 1.2, aber Wenn mindestens eine der beiden Variablen den Wert 'true' haben, soll "Stimmt!" ausgegeben werden, sonst "Stimmt nicht!".
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.4
+            </div>
+            <div class="text">
+              Was ist an folgendem Code falsch?
+              <pre>
+					if ( x = 42 ){
+						console.log ( 'x: ' +  x );
+					} 
+				</pre>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              2
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Zahl als Eingabe in einem Prompt machen.<br> Es soll der Betrag der Zahl (die Zahl ohne Vorzeichen) ausgegeben werden.<br> Mit anderen Worten: Wenn es eine negative Zahl ist, soll sie zu einer Positiven gewandelt werden. Eine positive Zahl soll positiv bleiben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3
+            </div>
+            <div class="text">
+              Belege eine Konstante mit einer zufälligen ganzen Zahl zwischen 0 und 100.<br> Erzeuge eine Variable dazu. Wenn die Konstante größer als 50 ist, dann soll die Variable ein true enthalten. Sonst ein false.<br> Löse das Problem mithilfe eines tertiären Operators.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3.1
+            </div>
+            <div class="text">
+              Wie 3, aber:<br> Wenn die Konstante durch zwei teilbar ist, dann soll die Variable ein true enthalten. Sonst ein false.<br>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3.2
+            </div>
+            <div class="text">
+              Wie 3, aber:<br> Wenn die Konstante durch 10 teilbar ist, dann soll die Variable ein true enthalten. Sonst den Rest der Division.<br>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4
+            </div>
+            <div class="text">
+              Belege eine Variable mit einer zufälligen ganzen Zahl zwischen 0 und 100.<br> Wenn die Variable kleiner ist als 20, soll sie verdoppelt werden.<br> Wenn die Variable kleiner ist als 50 und größergleich 20, soll sie mit 0 belegt werden.<br> Wenn die Variable größergleich 50 ist, soll sie mit halbiert werden.<br>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4.1
+            </div>
+            <div class="text">
+              Belege eine Variable mit einer zufälligen ganzen Zahl zwischen 0 und 100.<br> Wenn die Variable zwischen 40 und 60 liegt, dann soll eine entsprechende Ausgabe erzeugt werden.<br> Sonst eine andere Ausgabe.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4.2
+            </div>
+            <div class="text">
+              Was ist das Ergebnis der folgenden logischen Aussagen?<br>
+              <pre>
+					!true
+					false || false
+					false || !false
+					42 == '42'
+					42 === '42'
+					42 !== 42
+					true == Boolean(42)
+					false == Boolean(0)
+					true || false && false
+				</pre>
+            </div>
+          </div>
+
+
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5
+            </div>
+            <div class="text">
+              Lass den Benutzer eine Eingabe machen. Es soll sein Benutzername sein.<br> Wenn der Benutzername "admin" lautet, soll ein Flag auf true gesetzt werden.<br> Sonst auf false.
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+	  <div class="thema">
+        <h2>
+          Strings
+        </h2>
+        <div class="aufgaben">
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1
+            </div>
+            <div class="text">
+              Lege eine Variable vom Typ String an und fülle diese mit einem Text Deiner Wahl.<br> Der Text soll aus mindestens 200 Zeichen bestehen, er kann gern aus einer externen Quelle wie blindtextgenerator.de o.ä. kopiert werden.<br> Dieser Text wird Ausgangsbasis für die folgenden Aufgaben.
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.1
+            </div>
+            <div class="text">
+              Gib in einem Alert-Fenster die ersten 50 Zeichen des Strings aus.<br>
+
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.2
+            </div>
+            <div class="text">
+              Gib in einem Alert-Fenster die letzten 50 Zeichen des Strings aus.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.3
+            </div>
+            <div class="text">
+              Ausgehend von 1: Such das erste Vorkommen des Wortes 'und' und ersetze es durch ein 'oder'.<br> Lass das Ergebnis in einem Alert-Fenster ausgeben.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.4
+            </div>
+            <div class="text">
+              Wie 1.3, aber such <b>jedes</b> Vorkommen des Wortes 'und' und ersetze es durch ein 'oder'.<br> Lass das Ergebnis in einem Alert-Fenster ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              2
+            </div>
+            <div class="text">
+              Der Benutzer soll einen Text seiner Wahl in ein Prompt-Fenster eingeben.<br> Danach sollen die ersten 10 Zeichen der Eingabe in ein Alert-Fenster geschrieben werden.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              2.1
+            </div>
+            <div class="text">
+              Der Benutzer soll einen Text seiner Wahl in ein Prompt-Fenster eingeben.<br> Danach soll die zweite Hälfte der Zeichen in ein Alert-Fenster geschrieben werden.
+            </div>
+          </div>
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              2.2
+            </div>
+            <div class="text">
+              Der Benutzer soll einen Text seiner Wahl in ein Prompt-Fenster eingeben.<br> Danach soll das zweite Wort (die Zeichen vom ersten zum zweiten Leerzeichen) ausgegeben werden.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3
+            </div>
+            <div class="text">
+              Eingabe des Namens per prompt.<br> Ausgabe einer Begüßung des Benutzers mit Namen.
+              <br> Wenn der Benutzer keinen Namen eingibt, dann kommt eine traurige Meldung.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4
+            </div>
+            <div class="text">
+              Der Computer erzeugt eine ganze Zahl zwischen 0 und 5.<br> Der Benutzer muss per Prompt-Fenster raten, welches die erzeugte Zahl ist.<br> Wenn er falsch geraten hat, soll ausgegeben werden, welche die richtige Zahl gewesen wäre.<br> Rät er richtig, so bekommt er eine Gratulation.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5
+            </div>
+            <div class="text">
+              Lass den Benutzer eine Zahl seiner Wahl eingeben. <br> Dann soll der Computer ausgeben, ob die Zahl größer oder kleiner ist als 50.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              6
+            </div>
+            <div class="text">
+              Zwei Promptfenster werden nacheinander angezeigt. In sie soll der Benutzer jeweils eine Zahl eingeben.<br> Wenn das zweite Fenster mit OK bestätigt wurde, dann soll die Summe der beiden eingegebenen Werte in einem Alert-Fenster angezeigt werden.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              6.1
+            </div>
+            <div class="text">
+              Es soll noch ein drittes Promptfenster angezeigt werden. <br> Hierin soll der Benutzer den zu verwendenden Operator eingeben.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              7
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Zahl als Eingabe in einem Prompt machen.<br> Diese Zahl soll eine Temperatur in Kelvin sein. Rechne sie zu Celsius um und gib sie aus.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              7.1
+            </div>
+            <div class="text">
+              Der Benutzer soll eine Zahl als Eingabe in einem Prompt machen.<br> Diese Zahl soll eine Temperatur in Kelvin sein. Rechne sie zu Fahrenheit um und gib sie aus.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              8
+            </div>
+            <div class="text">
+              Erzeuge den String für den hexadezimalen RGB-Farbcode von Rot.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              8.1
+            </div>
+            <div class="text">
+              Erzeuge den String für einen zufälligen hexadezimalen RGB-Farbcode.
+            </div>
+          </div>
+
+          <div class="aufgabe schwer">
+            <div class="aufgabennr">
+              8.2
+            </div>
+            <div class="text">
+              Erzeuge den String für eine zufälligen Farbe im HSL-Farbsystem.
+            </div>
+          </div>
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              9
+            </div>
+            <div class="text">
+              <br> Der Benutzer soll nach seinem vollen Namen (Vor- und Nachname) gefragt werden.
+              <br> Dann soll er in einem Alert-Fenster nur mit dem Vornamen begrüßt werden.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="thema">
+
+        <h2>
+          Variablen, Konstanten, Basics
+        </h2>
+        <div class="aufgaben">
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1
+            </div>
+            <div class="text">
+              Lege eine Variable mit einem Wert Deiner Wahl an.
+              <bR> Lass diese Variable in der Konsole ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.1
+            </div>
+            <div class="text">
+              Lege eine Variable mit einem Wert Deiner Wahl an.
+              <bR> Lass das Doppelte dieser Variable in der Konsole ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.2
+            </div>
+            <div class="text">
+              Lege eine Variable mit einem Wert Deiner Wahl an.
+              <bR> Lass die Quadratwurzel dieser Variable in der Konsole ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.3
+            </div>
+            <div class="text">
+              Lege eine Variable mit einem Wert Deiner Wahl an.
+              <bR> Lass den Sinus dieser Variable in der Konsole ausgeben. <br> Beachte, dass die Sinus-Funktion Bogenmaß erwartet.
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              1.4
+            </div>
+            <div class="text">
+              Lege zwei Variablen mit Werten Deiner Wahl an.<br> Lass das Produkt der Multiplikation beider Zahlen in der Konsole ausgeben. <br>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.5
+            </div>
+            <div class="text">
+              Lege eine Variablen mit Werten Deiner Wahl an.<br> Lege eine weitere Variable ohne Wert an.<br> Lass in die zweite Variable die Information speichern, ob die erste Variable gerade ist oder nicht.<br> Tipp: Es ist Deine Sache, auf welche Weise Informationen abgelegt werden. Auch eine 0 kann eine Aussage sein.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.6
+            </div>
+            <div class="text">
+              Wie 1.5, aber lass den Datentyp der zweiten Variablen ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.7
+            </div>
+            <div class="text">
+              Was ist an folgendem Code falsch?
+              <pre>
+					let a = 5;
+					let b = 10;
+					a + b = 50;
+				</pre>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              1.8
+            </div>
+            <div class="text">
+              Was ist an folgendem Code falsch?
+              <pre>
+					let a = 5; b = 10; c = 50;
+				</pre>
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2
+            </div>
+            <div class="text">
+              Wo liegt der Unterschied zwischen einer Variablen und einer Konstanten?<br> Warum ist es sinnvoll, mit Konstanten zu arbeiten?
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.1
+            </div>
+            <div class="text">
+              Lege eine Variable mit einem Wert Deiner Wahl an.<br> Lege eine Konstante mit einem Wert Deiner Wahl dazu an.<br> Überschreibe die Variable mit dem Produkt beider Werte und lass sie in der Konsole ausgeben. <br>
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.2
+            </div>
+            <div class="text">
+              Lege eine Variable mit einem Wert Deiner Wahl an.<br> Lege eine Konstante mit einem Wert Deiner Wahl dazu an.<br> Überschreibe die Variable mit der Summe beider Werte und lass sie in der Konsole ausgeben. <br>
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.3
+            </div>
+            <div class="text">
+              Wozu dient das Semikolon am Ende eines Befehles?
+            </div>
+          </div>
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              2.4
+            </div>
+            <div class="text">
+              Was ist das Ergebnis der folgenden Rechnungen?<br>
+              <pre>
+				12 + 5 * 2
+				(12 + 5) * 2
+				12 + (5 * 2)
+				(12 + 5 * 2)
+				</pre>
+            </div>
+          </div>
+
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              3
+            </div>
+            <div class="text">
+              Lass eine zufällige Zahl in einem Alert-Fenster ausgeben.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3.1
+            </div>
+            <div class="text">
+              Wie 3, aber die zufällige Zahl soll eine ganze Zahl zwischen 10 und 100 sein. <br>
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              3.2
+            </div>
+            <div class="text">
+              Wie 3, aber die zufällige Zahl soll eine ganze Zahl zwischen 1 und 6 sein. <br>
+            </div>
+          </div>
+
+          <div class="aufgabe leicht">
+            <div class="aufgabennr">
+              3.3
+            </div>
+            <div class="text">
+              Wie 3, aber die zufällige Zahl soll eine Zahl zwischen 0.1 und 0.2 sein. <br>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3.4
+            </div>
+            <div class="text">
+              Wie 3.1, aber die Ausgabe soll in der Konsole erscheinen. <br>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3.5
+            </div>
+            <div class="text">
+              Welche Art von Kommentaren gibt es?
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              3.6
+            </div>
+            <div class="text">
+              Warum sollten Kommentare verwendet werden?
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              4
+            </div>
+            <div class="text">
+              Erläutere den Zweck des Strict-Modus.<br> Und wende ihn an. Denk in Zukunft immer dran, den Strict-Modus zu verwenden.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5
+            </div>
+            <div class="text">
+              Erläutere den Zweck des &lt;noscript&gt;-Tags.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              5.1
+            </div>
+            <div class="text">
+              Lass in der Konsole den Text 'Javascript funktioniert' ausgeben.<br> Wenn Javascript deaktiviert ist, soll eine entsprechende Meldung auf dem Bildschirm erscheinen.
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              6
+            </div>
+            <div class="text">
+              Was ist an folgendem Code falsch?
+              <pre>
+					let x = 3,14;
+				</pre>
+            </div>
+          </div>
+
+          <div class="aufgabe">
+            <div class="aufgabennr">
+              6.1
+            </div>
+            <div class="text">
+              Was ist an folgendem Code falsch?
+              <pre>
+					let x = 42;
+					const k = 2;
+					k *= x;
+					alert ( k );
+            </pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div id="closeall">Alles Schließen</div>
+  </body>
+
+</html>

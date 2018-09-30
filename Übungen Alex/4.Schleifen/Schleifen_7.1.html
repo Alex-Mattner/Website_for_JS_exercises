@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		let eing = prompt( 'Jetzt wirds endlich mal lustiger', 'Gib ein wieviel Zahlen der Fibonacci-Reihe du addieren möchtest' );
+		
+		(function (){
+		
+		let fib  = [1,1];
+		
+		if ( eing === 0 ) {
+			alert ( 'Sorry, Null is nich' );
+		} else if ( eing === 1 ) {
+			alert ( 'Die Summe der Fibonacci-Reihe hat die unglaubliche Summe von 1' );
+		} else if ( eing === 2 ) {
+			alert ( 'Bei zwei Stellen ist die Summe 2' );
+		} else {		
+			for ( let i = 2; i < eing; i++ ){
+				fib.push ( fib[i-2] + fib[i-1] );
+			}
+			alert( `Wie du meinst...Bitteschön: ${ fib }` );
+		}
+		
+		})();
+	
+	
+	</script>
+	
+</head>
+<body>
+
+	<p>
+	Der Computer soll x-Zahlen der Fibonacci-Reihe ausgeben.<br>
+    Der Benutzer gibt vorher an, wieviele Zahlen der Fibonacci-Reihe ausgegeben werden sollen.
+	</p>
+
+</body>
+</html>

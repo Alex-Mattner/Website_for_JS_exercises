@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		
+		
+		(function (){
+			/*
+		var fib;
+		var i;
+		var erg;
+		
+		
+		for (i=1; i<5; i++) {
+			if (i === 1) {
+				erg = 1 ;
+			} else {
+				
+				
+				fib = 
+					i[i.length - 2] + i[i.length -1];
+				 			
+			}
+		
+			let sum =+ fib[i] + erg;
+			console.log(sum);
+		
+		}
+		*/
+		
+		let fib  = [1,1];
+		
+		for ( let i = 2; i < 20; i++ ){
+			fib.push ( fib[i-2] + fib[i-1] );
+		}
+		
+		console.log ( fib );
+		
+		})();
+	
+
+	
+	
+	
+	</script>
+</head>
+<body>
+	<p>
+	Der Computer soll die ersten 20 Zahlen der Fibonacci-Reihe ausgeben.
+	</p>
+
+</body>
+</html>

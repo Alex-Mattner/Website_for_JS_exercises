@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		/* Was ist eine Flag?
+		A flag variable, in its simplest form, is a variable you define to have one value
+		until some condition is true, in which case you change the variable's value.
+		It is a variable you can use to control the flow of a function or statement, allowing
+		you to check for certain conditions while your function progresses.
+		*/
+		
+		
+		let beNa = prompt('Bitte gib deinen Namen ein', 'Name');
+				
+		let flagVar;
+		
+		(function (){
+			
+			//Lösung Tertiärer Operator
+			
+			beNa === 'admin' ? flagVar = true : flagVar = false;
+			
+			console.log(flagVar);
+		
+		
+		//Alternatvie 2 if-else
+		/*	
+			if (beNa === 'admin') {
+				flagVar = true;
+			} else {
+				flagVar = false;
+			}
+			
+			console.log(flagVar);
+		*/
+		
+		
+		})();
+	
+	
+	</script>
+</head>
+<body>
+	<p>
+	Lass den Benutzer eine Eingabe machen. Es soll sein Benutzername sein.
+	Wenn der Benutzername "admin" lautet, soll ein Flag auf true gesetzt werden.
+	Sonst auf false. 
+	</p>
+
+</body>
+</html>

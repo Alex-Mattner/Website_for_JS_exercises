@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		
+		
+		(function (){
+			// Math.random() * {[(max - min) + 1 ] + min }
+			const zuf = Math.floor(Math.random() * 101);
+			let andereVar
+			
+			// tertiärer Operator funktiniert wie if - else nur, dass er die Zeichen ? und : benutzt
+			// wenn XXX dann (?) mach so und so sonst (:) mach was anderes --- Doppelpunkt : entspricht also dem "else"
+			zuf > 50 ? andereVar = true : andereVar = false; 
+			
+			// console.log hier um das Programm zu testen
+			console.log(andereVar);
+						
+		})();
+	
+	
+	</script>
+</head>
+<body>
+	<p>
+	Belege eine Konstante mit einer zufälligen ganzen Zahl zwischen 0 und 100.
+	Erzeuge eine Variable dazu. Wenn die Konstante größer als 50 ist, dann soll die Variable ein true enthalten. Sonst ein false.
+	Löse das Problem mithilfe eines tertiären Operators. 
+	</p>
+
+</body>
+</html>

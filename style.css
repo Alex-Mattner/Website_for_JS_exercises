@@ -1,0 +1,203 @@
+
+      body {
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+	.thema {
+		position:relative;
+	}
+      h2 {
+        color: #555;
+        font-size: 1.2em;
+        text-align: left;
+        cursor: pointer;
+		margin-left: 20px;
+      }
+      h2::before {
+		content: '>';
+		position: absolute;
+		display: block;
+		left: 0px;
+		top:0px;
+		font-size:20px;
+		
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+      }
+      h2.offen::before {
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+      }
+
+	  div.test { 
+		width: 30px;
+		height: 30px;
+		}
+	  
+	  textarea {
+			width: 850px;
+			height: 750px;
+			margin-top: 120px;
+			margin-left: 650px;
+			background: linear-gradient(to bottom, #17baef, #fff);
+			font-size: 1.2em;
+			font-weight: 500;
+			}
+	  
+	  
+      .aufgaben {
+        position: relative;
+        overflow: hidden;
+		height: 0px;
+
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+      }
+      .aufgaben.offen {
+		  /*height: auto;*/
+      }
+
+      .aufgabennr {
+        color: #000;
+		padding: 5px;
+        margin-top: 10px;
+        width: 150px;
+        cursor: pointer;
+		
+        border: 1px solid #888;
+		
+		background: rgb(183,183,183);
+		background: -moz-linear-gradient(top, rgba(183,183,183,1) 0%, rgba(255,255,255,1) 48%);
+		background: -webkit-linear-gradient(top, rgba(183,183,183,1) 0%,rgba(255,255,255,1) 48%);
+		background: linear-gradient(to bottom, rgba(183,183,183,1) 0%,rgba(255,255,255,1) 48%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7b7b7', endColorstr='#ffffff',GradientType=0 );
+
+		-webkit-border-radius: 5px 20px 20px 5px;
+		border-radius: 5px 20px 20px 5px;
+
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+      }
+
+      .aufgabennr:before {
+        content: '';
+      }
+
+      .aufgabennr.offen {
+        font-size: 1.5;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+        padding: 10px;
+
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+
+      .aufgabennr.offen:before {
+        content: '';
+      }
+
+      .notiz {
+        background-color: rgba(255, 136, 115, 0.5);
+        color: #800;
+        padding: 40px;
+        border: #800 1px solid;
+        border-radius: 10px;
+      }
+
+      .schwer .aufgabennr {
+        border: 1px solid #f00;
+        color: #000;
+        background: -moz-linear-gradient(top, rgba(169, 3, 41, 0.2) 0%, rgba(109, 0, 25, 0.12) 20%, rgba(109, 0, 25, 0) 50%);
+        background: -webkit-linear-gradient(top, rgba(169, 3, 41, 0.2) 0%, rgba(109, 0, 25, 0.12) 20%, rgba(109, 0, 25, 0) 50%);
+        background: linear-gradient(to bottom, rgba(169, 3, 41, 0.2) 0%, rgba(109, 0, 25, 0.12) 20%, rgba(109, 0, 25, 0) 50%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#33a90329', endColorstr='#006d0019', GradientType=0);
+
+      }
+
+      .richtig.schwer .aufgabennr {
+        border: 1px solid #f00;
+        color: #000;
+        background: -moz-linear-gradient(top, rgba(51, 1, 1, 0.5) 0%, rgba(255, 0, 0, 0.22) 53%, rgba(255, 0, 0, 0) 94%);
+        background: -webkit-linear-gradient(top, rgba(51, 1, 1, 0.5) 0%, rgba(255, 0, 0, 0.22) 53%, rgba(255, 0, 0, 0) 94%);
+        background: linear-gradient(to bottom, rgba(51, 1, 1, 0.5) 0%, rgba(255, 0, 0, 0.22) 53%, rgba(255, 0, 0, 0) 94%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80330101', endColorstr='#00ff0000', GradientType=0);
+
+      }
+
+      .leicht .aufgabennr {
+        border: 1px solid #04C921;
+        color: #000;
+        background: -moz-linear-gradient(top, rgba(4, 201, 33, 0.2) 0%, rgba(0, 165, 19, 0.12) 20%, rgba(0, 165, 19, 0) 50%);
+        background: -webkit-linear-gradient(top, rgba(4, 201, 33, 0.2) 0%, rgba(0, 165, 19, 0.12) 20%, rgba(0, 165, 19, 0) 50%);
+        background: linear-gradient(to bottom, rgba(4, 201, 33, 0.2) 0%, rgba(0, 165, 19, 0.12) 20%, rgba(0, 165, 19, 0) 50%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3304c921', endColorstr='#0000a513', GradientType=0);
+
+      }
+
+      .loesung {
+        position: relative;
+        display: block;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #ccc;
+        overflow: hidden;
+      }
+
+      .text {
+        display: block;
+        padding-top: 10px;
+        overflow: hidden;
+
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+      }
+
+      .file {
+        position: relative;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+      }
+
+      #closeall {
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        padding: 10px;
+        background: #074f66;
+        border: 1px solid #074f66;
+        text-transform: uppercase;
+        cursor: pointer;
+		color: #fff;
+		
+
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+      }
+
+      #closeall:hover {
+        font-size: 1.5em;
+        color: #fff;
+        background-color: #456;
+      }
+

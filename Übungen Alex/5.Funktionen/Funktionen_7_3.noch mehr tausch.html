@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+	/*
+	let text = "...wäre ich heute früher aufgestanden, dann hätte ich mehr JavaScript lernen können.";
+	let replace = /x/g
+	
+	let findeX = () => {
+		
+		let neu = text.replace( replace, 'u');
+		
+		console.log(neu);
+	};
+	
+	findeX(text);
+	*/
+	let text = "...wäre ich heute früher aufgestanden, dann hätte ich mehr JavaScript lernen können.";
+	
+	function deUmlaut(text){
+  text = text.toLowerCase();
+  text = text.replace(/ä/g, 'ae');
+  text = text.replace(/ö/g, 'oe');
+  text = text.replace(/ü/g, 'ue');
+  text = text.replace(/ß/g, 'ss');
+  text = text.replace(/ /g, '-');
+  text = text.replace(/\./g, '');
+  text = text.replace(/,/g, '');
+  text = text.replace(/\(/g, '');
+  text = text.replace(/\)/g, '');
+  return console.log(text);
+  
+}
+	
+	deUmlaut(text);
+	
+	</script>
+	
+</head>
+<body>
+	<p>Entwickle eine Funktion, die in einem übergebenen String alle Umlaute findet und in den HTML-Sonderzeichencode umwandelt.
+Das Ergebnis soll in einem Alert ausgegeben werden.   
+	</p>
+</body>
+</html>

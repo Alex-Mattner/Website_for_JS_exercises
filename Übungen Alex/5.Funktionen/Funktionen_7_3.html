@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+
+	let text = "So ein scheiß...wäre ich nur heute früher aufgestanden, dann hätte ich mehr JavaScript lernen können.\n...den HTML-Sonderzeichencode verrät dir Onkel Google\nich bin dafür jetzt zu spät aufgestanden...schaff ich nicht mehr!";
+	
+	let umlaut= (text) => {
+	  //text = text.toLowerCase();
+	  text = text.replace(/ä/g, 'ae');
+	  text = text.replace(/ö/g, 'oe');
+	  text = text.replace(/ü/g, 'ue');
+	  text = text.replace(/ß/g, 'ss');
+	  
+		return alert(text);
+  
+	}
+	
+	umlaut(text);
+	
+	</script>
+	
+</head>
+<body>
+	<p>Entwickle eine Funktion, die in einem übergebenen String alle Umlaute findet und in den HTML-Sonderzeichencode umwandelt.
+Das Ergebnis soll in einem Alert ausgegeben werden.   
+	</p>
+</body>
+</html>

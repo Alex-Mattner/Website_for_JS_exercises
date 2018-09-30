@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		
+		
+		(function (){
+			// Math.random() * {[(max - min) + 1 ] + min }
+			let zuf = Math.floor(Math.random() * 101);
+			let andereVar
+			
+			if (zuf >= 40 && zuf <= 60) {
+				alert (`${zuf} ist zwischen 40 und 60`);
+			} else {
+				alert (`${zuf} ist leider nicht zwischen 40 und 60. Versuchs doch noch einmal...`);
+			}
+			
+		})();
+	
+	
+	</script>
+</head>
+<body>
+	<p>
+	Belege eine Variable mit einer zufälligen ganzen Zahl zwischen 0 und 100.
+	Wenn die Variable zwischen 40 und 60 liegt, dann soll eine entsprechende Ausgabe erzeugt werden.
+	Sonst eine andere Ausgabe. 
+	</p>
+
+</body>
+</html>

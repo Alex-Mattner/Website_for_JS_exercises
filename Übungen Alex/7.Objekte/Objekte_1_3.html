@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		
+	'use strict';
+		
+		let geb = {
+			strasse: 'Seestrasse',
+			hausnummer: 11,
+			postleitzahl: 81162,
+			ort: 'Augsburg',
+			eigentümer: 'Mattner',
+			adressGes: function(){
+				var adresse = this.eigentümer + this.strasse + this.hausnummer 
+				return 	console.log(adresse);
+
+			
+			}
+		}
+		
+		
+		let mietPart = [{Vorname:'Albert',
+						Nachname:'Einstein',
+						Wohnungsnummer:9,
+						Kaltmiete:1200},
+						
+						{Vorname:'Bert',
+						Nachname:'Ein',
+						Wohnungsnummer:99,
+						Kaltmiete:1100},
+						
+						{Vorname:'Al',
+						Nachname:'Stein',
+						Wohnungsnummer:19,
+						Kaltmiete:1000},
+						
+						{Vorname:'Gertert',
+						Nachname:'Einser',
+						Wohnungsnummer:909,
+						Kaltmiete:1500},
+						] 
+		
+		geb.zusatz = mietPart;
+		
+		geb.adressGes();
+		
+		console.log(geb);
+		
+	</script>
+	
+</head>
+<body>
+
+
+	<script>
+		
+	</script>
+
+</body>
+</html>

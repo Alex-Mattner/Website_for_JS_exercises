@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		
+		
+		(function (){
+			// Math.random() * {[(max - min) + 1 ] + min }
+			const zuf = Math.floor(Math.random() * 101);
+			let andereVar
+			
+			zuf % 10 === 0 ? andereVar = true : andereVar = zuf; 
+			
+			console.log(zuf);
+			console.log(andereVar);
+						
+		})();
+	
+	
+	</script>
+</head>
+<body>
+	<p>
+	Wie 3.1, aber:
+	Wenn die Konstante durch 10 teilbar ist, dann soll die Variable ein true enthalten. Sonst den Rest der Division.
+	</p>
+
+</body>
+</html>

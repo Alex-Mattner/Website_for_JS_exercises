@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		
+		'use strict';
+		
+		class Film {
+			
+			constructor (titel, regie, laufzeit, jahr) {
+				
+				this.titel = titel;
+				this.regie = regie;
+				this.laufzeit = laufzeit;
+				this.jahr = jahr;
+				
+			}
+			
+			
+			// Methode 
+			ausgabeDOM(){
+
+				let neu = document.createElement ( 'div' );
+				neu.classList.add ( 'film' ); // hier wird dem dom element ein class name angehängt
+
+				let neuHeader = document.createElement ( 'h3' );
+				neuHeader.innerHTML = this.titel; // Titel soll in den Header geschrieben werden
+				neu.appendChild ( neuHeader );
+
+				let neuRegie = document.createElement ( 'div' );
+				neuRegie.classList.add ( 'regie' );
+				neuRegie.innerHTML = this.regie;
+				neu.appendChild ( neuRegie );
+
+				let neuLaufzeit = document.createElement ( 'div' );
+				neuLaufzeit.classList.add ( 'laufzeit' );
+				neuLaufzeit.innerHTML = this.laufzeit;
+				neu.appendChild ( neuLaufzeit );
+
+				let neuJahr = document.createElement ( 'div' );
+				neuJahr.classList.add ( 'jahr' );
+				neuJahr.innerHTML = this.jahr;
+				neu.appendChild ( neuJahr );
+
+				return neu;
+
+				}
+			
+			alter () {
+				return new Date().getFullYear() - this.jahr;
+			}
+			
+			// als Getter
+			get getAlter(){
+				return new Date().getFullYear() - this.jahr;
+			}
+			
+			
+		}
+		
+		let sammlung = [];
+		
+		sammlung.push ( new Film ('Deadpool', 'Tim Miller', 108, 2016));
+		sammlung.push ( new Film ('Die Adams Family', 'Barry Sonnenfeld', 109, 1991));
+		sammlung.push ( new Film ('The Day After', 'Nicholas Meyer', 127, 1983));
+		sammlung.push ( new Film ('Dr. Strangelove', 'Stanley Kubrick', 135, 1964));
+		sammlung.push ( new Film ('Der Herr der Ringe - Die Gefährten', 'Peter Jackson', 178, 2001));
+		sammlung.push ( new Film ('Enter the Void', 'Gaspar Noé', 161, 2009));
+		sammlung.push ( new Film ('Gost in the Shell', 'Rupert Sanders', 107, 2017));
+		
+		window.onload = () => {
+		
+			let ausgabe = document.querySelector ( '#ausgabe' );
+		
+			sammlung.forEach ( el => {
+				ausgabe.appendChild ( el.ausgabeDOM() );
+				console.log ( el.titel + ': ' + el.alter() + 'Jahre')
+			})
+		}
+		
+		
+		
+		(function(){
+		
+			
+			
+		
+		})();
+		
+	</script>
+	
+</head>
+<body>
+	<div id="ausgabe"></div>
+</body>
+</html>

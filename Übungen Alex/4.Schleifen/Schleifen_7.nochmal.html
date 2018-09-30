@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+	
+		'use strict';
+		
+		
+		let fib = [1,1];
+		let i;
+		
+		for (i=2; i < 10; i++) {
+			fib.push( fib[i-1] + fib[i-2]);
+		}
+		
+		console.log(fib);
+		
+		
+		
+	/*	
+	
+		//Alternative 2 (Kurzschreibweise, weil nur eine Zeile i.d. Schleife)
+		
+		for ( let i = 2; i < 20; i++) fib.push( fib[i-1] + fib[i-2] );
+		
+		console.log(fib);
+	*/
+	
+	
+	</script>
+</head>
+<body>
+	<p>
+	Der Computer soll die ersten 20 Zahlen der Fibonacci-Reihe ausgeben.
+	</p>
+
+</body>
+</html>

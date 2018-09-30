@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<style type="text/css">
+	#klick {
+		position:relative;
+		display:block;
+		background-color:#ccc;
+		border:#aaa 1px solid;
+		border-radius:3px;
+		width:200px;
+		padding:5px;
+		text-align:center;
+		text-transform: uppercase;
+		color:#000;
+		font-weight:bold;
+	}
+	#klick:hover {
+		color:#f00;
+	}
+	.hallo {
+		position:relative;
+		background-color: #eee;
+		margin-bottom: 10px;
+		padding:10px;
+		
+		border:1px solid #ccc;
+		border-radius:5px;
+		moz-border-radius: 5px;
+	}
+	.hallo p {
+		position:relative;
+		margin-left:20px;
+	}
+	.rot {
+		color:#f00;
+	}
+	.hervorheben {
+		font-weight:bold;
+		border-width:5px;
+	}
+</style>
+
+<script>
+
+</script>
+
+</head>
+<body>
+
+<div class="hallo">
+	Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.
+</div>
+
+<div id="ausgabe"></div>
+
+<div id="eingaben">
+	<img src="keinBild">
+	<img src="garKeinBild">
+	<br>
+	<br>
+	<input><br>
+	<input><br>
+	<input><br>
+	<input><br>
+	<br>
+	<input type="radio" name="auswahl" value="Punkt 1">
+	<input type="radio" name="auswahl" value="Punkt 2">
+	<input type="radio" name="auswahl" value="Punkt 3">
+</div>
+
+<button id="klick">
+	Klick
+</button>
+
+
+<script>
+// hier geht window.onload nicht, weil zu dem Zeitpunkt an dem das Dom geladen ist, sind die Bilder schon durch
+
+	let bilder = Array.from ( document.querySelectorAll ( 'img' ) );  // im modernen chrome und Firefox braucht man array.from nciht mehr , aber lieber sicher gehen
+	bilder.forEach ( el => {
+		el.onerror = evt => {
+			console.log ( evt.target.src + ' konnte nicht geladen werden.');
+		}
+	});
+	
+/*	
+	//Alternative 2
+	let bilder = Array.from ( document.querySelectorAll ( 'img' ) );  
+	bilder.forEach ( el => {
+		el.onerror = evt => {
+			console.log ( evt.target.getAttribut ( 'src' ) + ' konnte nicht geladen werden.');
+		}
+	});
+	
+*/
+</script>
+
+
+</body>
+</html>
+
+
+
+
